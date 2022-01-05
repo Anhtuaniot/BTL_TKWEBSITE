@@ -1,0 +1,200 @@
+*{
+    margin:0;
+    padding:0;
+    border: none;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+}
+
+.left-home-about_me {
+    background-color:#BCBABE;
+    width: 25%;
+}
+
+
+.right-review_html_css_js  {
+    background-color: #F1F1F2;
+    width: 75%;
+    position: relative;
+}
+
+
+.nav_bar {
+    background-color:#90AFC5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    padding-bottom: 30px;
+}
+
+.nav_bar h1 {
+    color: white;
+    font-size: 3rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.title h1 {
+    text-align: center;
+}
+
+.title p {
+    color: #feffff;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.float_icon {
+    top: 120px;
+    width: 400px;
+    justify-content: space-between;
+    position: absolute;
+    display: flex;
+    z-index: 100;
+}
+
+.float_icon_html, .float_icon_css, .float_icon_js {
+    margin-left: 13px;
+    margin-bottom: 10px;
+    width: 70px;
+    height: 70px;
+    border: #90AFC5 solid 2px;
+    border-radius: 50%;
+    box-shadow:2px 3px 8px rgb(107, 110, 101), -2px 3px 8px rgb(83, 78, 78);
+}
+
+.float_icon_html {
+    background: url(file_ảnh_btl_web/HTMLicon.jpg);
+    background-size: 70px;
+
+}
+
+.float_icon_css {
+    background: url(file_ảnh_btl_web/CSSicon.jpg);
+    background-size: 70px;
+}
+
+.float_icon_js {
+    background: url(file_ảnh_btl_web/JSicon.jpg);
+    background-size: 70px;
+}
+
+.review_html, .review_css, .review_js {
+    width: 100px;
+    text-align: center;
+    color: black;
+}
+
+.review_html:hover .float_icon_html{
+    border: red solid 2px;
+}
+
+.review_html:hover {
+    color: red;
+}
+
+.review_css:hover .float_icon_css {
+    border: royalblue solid 2px;
+}
+
+.review_css:hover {
+    color: royalblue;
+}
+
+.review_js:hover .float_icon_js {
+    border: rgb(175, 175, 34) solid 2px;
+}
+
+.review_js:hover {
+    color: rgb(167, 167, 42);
+}
+
+.left-home-about_me {
+    display: flex;
+    justify-content: center;
+}
+
+.left-home-about_me ul.home {
+    list-style: none;
+}
+
+.left-home-about_me ul.home a {
+    text-decoration: none;
+}
+
+.list {
+    width: 200px;
+    margin-top: 25px;
+}
+
+.home > li {
+    border-top: 1px solid rgba(102, 97, 97, 0.502);
+    line-height: 25px;
+    color: black;
+}
+
+.home > li:last-child {
+    margin-top: 25px;
+}
+
+.home > li a {
+    color: #feffff;
+}
+
+.profile {
+    margin-top: 10px;
+    background-color: #feffff;
+    font-family:'Courier New', Courier, monospace;
+    color: #7a7381;
+    font-size:small;
+    text-align: center;
+    border: 1px solid #66616180;
+    border-radius: 2px;
+    box-shadow: 2px 4px 3px rgb(151, 142, 142), -2px 4px 3px rgb(151, 142, 142);
+}
+
+.profile img {
+    width: 60%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+}
+
+.main {
+    background-color: white;
+    margin: 95px 85px 0px 85px;
+    border: 2px solid #BCBABE;
+}
+
+.main img {
+    width: 100%;
+    
+}
+
+.gtchung {
+    margin: 20px;
+}
+
+.gtchung h2{
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+
+.gtchung p {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+.footer {
+    height: 100px;
+    background-color: black;
+}
