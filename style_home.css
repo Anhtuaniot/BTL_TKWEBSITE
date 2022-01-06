@@ -16,7 +16,6 @@ body {
 
 
 .right-review_html_css_js  {
-    background-color: #F1F1F2;
     width: 75%;
     position: relative;
 }
@@ -65,8 +64,9 @@ body {
     width: 70px;
     height: 70px;
     border: #90AFC5 solid 2px;
+    outline: 2px solid white;
     border-radius: 50%;
-    box-shadow:2px 3px 8px rgb(107, 110, 101), -2px 3px 8px rgb(83, 78, 78);
+    
 }
 
 .float_icon_html {
@@ -85,6 +85,10 @@ body {
     background-size: 70px;
 }
 
+.review_html a {
+    text-decoration: none;
+}
+
 .review_html, .review_css, .review_js {
     width: 100px;
     text-align: center;
@@ -95,7 +99,7 @@ body {
     border: red solid 2px;
 }
 
-.review_html:hover {
+.review_html:hover a{
     color: red;
 }
 
