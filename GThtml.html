@@ -10,7 +10,7 @@
 <body>
     <div class="header">
         <div class="title">
-            <a href="">
+            <a href="index.html" title="Trở về trang chủ">
                 <h1>Blog</h1>
                 <p><i>Bài tập lớn thiết kế Website</i></p>
             </a>
@@ -263,11 +263,85 @@ Ví dụ:  &lt;dl&gt;
                 &lt;/table&gt;
             </pre>
             </div>
+            <p class="level3">- Xử lý khối trong HTML</p>
+            <p>Mọi phần tử HTML đều có giá trị hiển thị mặc định, tùy thuộc vào loại
+                phần tử đó là gì.
+            </p>
+            <p>Có hai loại giá trị hiển thị đó là Khối và nội tuyến.</p>
+            <p>Phần tử cấp khối luôn bắt đầu trên một dòng mới và chiếm toàn bộ chiều rộng có sẵn.</p>
+            <p>Ví dụ:</p>
+            <div style="border: 1px solid grey; margin-bottom: 4px;">Phần tử &lt;div&gt; là phần tử cấp khối</div>
+            <span style="border: 1px solid grey; ">Phần tử &lt;span&gt; là phần tử nội tuyến </span>
+            <p>Phần tử cấp khối có thể chứa các phần tử khác và có lề trên và lề dưới còn phần tử nội tuyến thì không chứa được các 
+                phần tử khác và không có lề trên, dưới.
+            </p>
+            <div class="example_list">
+                <div>
+                    <p>Các phần tử cấp khối:</p>
+            <img src="file_ảnh_btl_web/blockelement.jpg" alt="" style="width: 100%;">
+            <p>Các phần tử nội tuyến:</p>
+            <img src="file_ảnh_btl_web/inlineelement.jpg" style="width: 100%;" alt="">
+                </div>
+            </div>
+            <p class="level3">- Hình ảnh trong HTML</p>
+            <p>Hình ảnh có thể cải thiện giao diện và thiết kế của trang web.</p>
+            <img src="file_ảnh_btl_web/vdimg1.jpg" alt="" style="width: 31.6%;">
+            <img src="file_ảnh_btl_web/vdimg2.jpg" alt="" style="width: 35.4%;">
+            <img src="file_ảnh_btl_web/vdimg3.jpg" alt="" style="width: 31.6%;">
+            <p>Cú pháp:</p>
+            <span style="background-color:whitesmoke;">&lt;img src="đường dẫn" alt="văn bản mô tả hình ảnh" style="width: chiều rộng; height: chiều cao;"/&gt;</span>
+            <p class="level3">-  Canvas và đồ họa SVG</p>
+            <p>Canvas</p>
+            <p>Thẻ <span class="code">&lt;canvas&gt;</span> được sử dụng để vẽ đồ họa một cách nhanh chóng, thông qua JavaScript</p>
+            <p>Phần tử <span class="code">&lt;canvas&gt;</span> là một vùng chứa cho đồ họa và ta phải sử dụng JavaScript để thực thi vẽ đồ họa.</p>
+            <p>về cơ bản canvas cũng giống các phần tử có tính chất khối khác, nếu không css hay js nó sẽ không có đường viền và không có nội dung</p>
+            <p>Ví dụ:</p>
+            <img src="file_ảnh_btl_web/vdcanvas1.jpg" alt="" style="width:50%"><br>
+            <canvas id="myCanvas1" width="200" height="100" style="border:1px solid #000000;">  
+            </canvas>
+            <p>Sau khi tạo vùng ta sẽ thêm JavaScript để vẽ</p>
+            <p>Ví dụ: vẽ một đường chéo</p>
+            <img src="file_ảnh_btl_web/vdcanvas2.jpg" alt="" style="width:50%"><br>
+            <canvas id="myCanvas2" width="200" height="100" style="border:1px solid #000000;">
+            </canvas>
+            <p>Ví dụ: vẽ một hình tròn</p>
+            <img src="file_ảnh_btl_web/vdcanvas3.jpg" alt="" style="width:50%"><br>
+            <canvas id="myCanvas3" width="200" height="100" style="border:1px solid #000000;">
+            </canvas>
+            <p>Ngoài ra chúng ta có thể vẽ chữ, văn bản, dải màu, hình ảnh...</p>
+            <p>Đồ họa SVG</p>
+            <P>Đồ họa SVG được định nghĩa là đồ họa dựa trên vector ở định dạng XML.</P>
+            <p>SVG là một ngôn ngữ để mô tả đồ họa 2D trong XML</p>
+            <p>Phần tử &lt;svg&gt; là vùng chứa đồ họa SVG</p>
+            <p>Ví dụ: vẽ một hình tròn</p>
+            <img src="file_ảnh_btl_web/vdsvg1.jpg" alt="" style="width:50%"><br>
+            <svg width="100" height="100">
+                <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+            </svg>
+            <p>Ví dụ: vẽ một hình chữ nhật</p>
+            <img src="file_ảnh_btl_web/vdsvg2.jpg" alt="" style="width:50%">
+            <svg width="400" height="100">
+                <rect width="400" height="100" style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)" />
+            </svg>
         </div>
     </div>
     
     <div class="footer">
 
     </div>
+    <script>
+        var c = document.getElementById("myCanvas2");
+        var ctx = c.getContext("2d");
+        ctx.moveTo(0, 0);
+        ctx.lineTo(200, 100);
+        ctx.stroke();
+    </script>
+    <script>
+        var c = document.getElementById("myCanvas3");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+        ctx.stroke();
+        </script>
 </body>
 </html>
