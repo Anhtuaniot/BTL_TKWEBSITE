@@ -3,6 +3,7 @@
     padding:0;
     border: none;
     font-family: sans-serif;
+    
 }
 
 body {
@@ -211,3 +212,9 @@ body {
     height: 100px;
     background-color: black;
 }
+
+@media screen and (max-width: 800px) {
+    .main  {
+        margin: 0;/*The width is 100%, when the viewport is 800px or smaller */
+    }
+} 
