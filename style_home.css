@@ -85,8 +85,9 @@ body {
     background-size: 70px;
 }
 
-.review_html a {
+.review_html a, .review_css a, .review_js a {
     text-decoration: none;
+    color: black;
 }
 
 .review_html, .review_css, .review_js {
@@ -103,6 +104,14 @@ body {
     color: red;
 }
 
+.review_css:hover a{
+    color: royalblue;
+}
+
+.review_js:hover a{
+    color: #afaf22;
+}
+
 .review_css:hover .float_icon_css {
     border: royalblue solid 2px;
 }
@@ -112,7 +121,7 @@ body {
 }
 
 .review_js:hover .float_icon_js {
-    border: rgb(175, 175, 34) solid 2px;
+    border: #afaf22 solid 2px;
 }
 
 .review_js:hover {
