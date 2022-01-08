@@ -10,20 +10,26 @@ body {
     display: flex;
 }
 
+:root {
+    --vang: rgb(228, 217, 63);
+    --xam:#BCBABE;
+}
+
 .left-home-about_me {
-    background-color:#BCBABE;
+    background-color:var(--xam);
     width: 25%;
 }
 
 
 .right-review_html_css_js  {
+    background-color: whitesmoke;
     width: 75%;
     position: relative;
 }
 
 
 .nav_bar {
-    background-color:#90AFC5;
+    background-color:var(--vang);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,7 +38,7 @@ body {
 }
 
 .nav_bar h1 {
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 3rem;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
@@ -42,7 +48,7 @@ body {
 }
 
 .title p {
-    color: #feffff;
+    color: #000000;
 }
 
 .menu {
@@ -62,28 +68,28 @@ body {
 .float_icon_html, .float_icon_css, .float_icon_js {
     margin-left: 13px;
     margin-bottom: 10px;
-    width: 70px;
-    height: 70px;
-    border: #90AFC5 solid 2px;
-    outline: 2px solid white;
+    width: 60px;
+    height: 60px;
+    border: rgb(48, 45, 45) solid 2px;
+    outline: 2px solid whitesmoke;
     border-radius: 50%;
     
 }
 
 .float_icon_html {
     background: url(file_ảnh_btl_web/HTMLicon.jpg);
-    background-size: 70px;
+    background-size: 60px;
 
 }
 
 .float_icon_css {
     background: url(file_ảnh_btl_web/CSSicon.jpg);
-    background-size: 70px;
+    background-size: 60px;
 }
 
 .float_icon_js {
     background: url(file_ảnh_btl_web/JSicon.jpg);
-    background-size: 70px;
+    background-size: 60px;
 }
 
 .review_html a, .review_css a, .review_js a {
@@ -163,7 +169,7 @@ body {
 
 .profile {
     margin-top: 10px;
-    background-color: #feffff;
+    background-color:whitesmoke;
     font-family:'Courier New', Courier, monospace;
     color: #7a7381;
     font-size:small;
@@ -177,13 +183,13 @@ body {
     width: 40%;
     margin-top: 10px;
     margin-bottom: 10px;
-    border-radius: 2px;
+    border-radius: 4px;
 }
 
 .main {
-    background-color: white;
+    background-color: whitesmoke;
     margin: 95px 85px 0px 85px;
-    border: 2px solid #BCBABE;
+    box-shadow: 1.6px 1.2px 6px rgb(179, 178, 178),-1.6px 2px 6px rgb(182, 182, 182);
 }
 
 .main img {
