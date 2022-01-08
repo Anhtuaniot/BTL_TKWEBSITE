@@ -4,9 +4,195 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jsST.css">
     <title>Giới thiệu JS</title>
 </head>
 <body>
-    <p>Giowis thieu js</p>
+    <div class="header">
+        <div class="title">
+            <a href="index.html" title="Trở về trang chủ">
+                <h1>Blog</h1>
+                <p><i>Bài tập lớn thiết kế Website</i></p>
+            </a>
+        </div>
+    </div>
+    <div class="float">
+        <div class="icon_float">
+                
+        </div>
+    </div>
+    <div class="float">
+        <div class="main">
+            <h2 style="text-align: center;">Giới thiệu JavaScript</h2>
+            <h4>1. Tổng quan JavaScript</h4>
+            <p>JavaScript (viết tắt là JS) là một ngôn ngữ lập trình thông dịch (Interpreted Programming Language) 
+            hay ngôn ngữ kịch bản (Scripting Language).</p>
+            <p><b>Ngôn ngữ thông dịch (Interpreted Languages) </b>là ngôn ngữ biên dịch và thực thi cùng lúc trên từng dòng code, 
+                tốc độ thực thi chậm: Javascript, PHP, Python, Ruby, …</p>
+            <p><b>Ngôn ngữ biên dịch (Compiled Languages)</b> là ngôn ngữ biên dịch trước, thực thi sau trên toàn bộ mã nguồn. 
+                Tốc độ thực thi rất nhanh: C, C++, C#, Go, Rust, …</p>
+            <p>JS được sinh ra với mục đích chính là nhúng vào file HTML để biến một website tĩnh trở nên sinh động hơn.</p>
+            <h4>2. Các lệnh điều khiển (theo điều kiện (if, switch), lặp (for, while...))</h4>
+            <p>câu lệnh if-else trong javascript cũng giống như các ngôn ngữ khác, nếu điều kiện của mệnh đề đúng thì code phía trong sẽ được thực hiện, và ngược lại nếu 
+            sai thì nó sẽ không chạy code trong mệnh đề.</p>
+            <p class="level3">
+                Câu lệnh if
+            </p>
+            <div class="example_list">
+            <p>Ví dụ:</p>
+            <pre>
+            var a = 5
+            var b = 6
+            if (a != b) {
+                //Vì a khác b nên code phía trong if sẽ được chạy
+                document.write('a khác b');
+            </pre>
+            </div>
+            <p class="level3">
+                Câu lệnh else if, else
+            </p>
+            <div class="example_list">
+            <p>Ví dụ:</p>
+            <pre>
+                var diem = 5
+                if (diem &lt; 4) {
+                //Nếu thoả mãn ngay trường hợp này thì lệnh sẽ chạy
+                document.write('Học Lại');
+                }else if (diem >= 5 && diem &lt; 8) {
+                //Nếu trường hợp if không thoả mãn thì trường hợp else 
+                if sẽ được xét đến document.write('Loại trung');
+                }else{
+                // else là trường hợp ngược lại với tất cả cácc trường hợp 
+                if và else if nên không cần có điều kiện document.write('Loại giỏi');
+                }
+            </pre>
+            </div>
+            <p class="level3">
+                Câu lệnh swith case
+            </p>
+            <p>Đây là một loại câu lệnh rẽ nhánh( hay còn gọi là câu lệnh điều kiện) có đặc điểm là để giải quyết các bài toán mà có các nhánh là các điều kiện cố định.</p>
+            <div class="example_list">
+            <p>Ví dụ:</p>
+            <pre>
+                var so = 2
+                switch (so) {
+                //Các trường hợp này sẽ được xét nếu thoả mãn thì lệnh sẽ chạy
+                de >case 1:
+                document.write('Một');
+                break;
+                case 2:
+                document.write('Hai');
+                break;
+                //Đây là trường hợp mà biến không thoả mãn tất cả các trường hợp case
+                default:
+                document.write('số sai');
+                break;
+                }
+            </pre>
+            </div>
+            <p class="level3">
+                Vòng lặp for, while
+            </p>
+            <p>Vòng for và vòng while trong javascript cũng tương tự như các ngôn ngữ như C/C++. Ta có thể xem qua cú pháp của 2 vòng lặp này:</p>
+            <p><i>Vòng for</i></p>
+            <div class="example_list">
+            <pre>
+                for(khởi tạo;điều kiện;biểu thức cuối){
+                    //Các các câu lệnh sẽ được đặt ở trong vòng lặp
+                Lệnh
+                  .....
+                }
+            </pre>
+            </div>
+            <p><i>Vòng while</i></p>
+            <div class="example_list">
+            <pre>
+                while(điều kiện){
+                    //Các các câu lệnh sẽ được đặt ở trong vòng lặp
+                    Lệnh
+                    .....
+                    }
+            </pre>
+            </div>
+            <h4>3. Giới thiệu hàm và cách sử dụng hàm</h4>
+            <p>Hàm là một hoặc nhiều đoạn mã được viết ra để thực thi một hoặc nhiều hành động khi gọi nó, <br>
+                hàm có khả năng gọi đi gọi lại được.</p>
+            
+            Cú pháp:
+            <pre>
+                function tên hàm() {
+                    //danh sách các câu lệnh của hàm
+                    .....
+                    } 
+            </pre> 
+            <div class="example_list">
+            <pre>
+            Ví dụ:
+            &lt;script>
+            //Hàm
+            function LapTrinhCoBan(){
+               document.write("Hello World!");}
+            //gọi hàm
+            LapTrinhCoBan();
+            &lt;/script>
+            </pre>
+            </div>
+            <h4>4. Giới thiệu một số đối tượng DOM, đối tượng JavaScript</h4>
+            <p class="level3">
+                DOM HTML
+            </p>
+            <p>Đối tượng tài liệu HTML DOM là chủ sở hữu của tất cả các đối tượng khác trong
+                trong trang web của chúng ta.
+            </p>
+            Dưới đây là các ví dụ về cách sử dụng đối tượng tài liệu để truy cập và thao tác với HTML.
+            <table>
+                <caption>Tìm các phần tử HTML</caption>
+                <tr>
+                    <th>Phương thức</th>
+                    <th>Mô tả</th>
+                </tr>
+                <tr>
+                    <td>document.getElementById(id)</td>
+                    <td>Truy xuất phần tử thông qua id</td>
+                </tr>
+                <tr>
+                    <td>document.getElementsByTagName(name)</td>
+                    <td>Truy xuất phần tử thông qua tên thẻ</td>
+                </tr>
+                <tr>
+                    <td>document.getElementsByClassName(name)</td>
+                    <td>Truy xuất phần tử thông qua tên class</td>
+                </tr>
+            </table>
+            <table>
+                <caption>Thay đổi các phần tử HTML</caption>
+                <tr>
+                    <th>Thuộc tính</th>
+                    <th>Mô tả</th>
+                </tr>
+                <tr>
+                    <td>element.innerHTML =  new html content</td>
+                    <td>Thay đổi nội dung bên trong phần tử HTML</td>
+                </tr>
+                <tr>
+                    <td>element.attribute = new value</td>
+                    <td>Thay đổi giá trị thuộc tính của một phần tử HTML</td>
+                    
+                </tr>
+                <tr>
+                    <td>element.style.property = new style</td>
+                    <td>Thay đổi style của một phần tử HTML</td>
+                </tr>
+                <tr>
+                    <th>Phương thức</th>
+                    <th>Mô tả</th>
+
+                </tr>
+                <tr>
+                    <td>element.setAttribute(attribute, value)</td>
+                    <td>thay đổi giá trị thuộc tính của một phần tử HTML</td>
+                </tr>
+            </table>
+        </div>
 </body>
 </html>
