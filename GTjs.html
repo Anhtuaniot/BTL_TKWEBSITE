@@ -190,9 +190,99 @@
                 </tr>
                 <tr>
                     <td>element.setAttribute(attribute, value)</td>
-                    <td>thay đổi giá trị thuộc tính của một phần tử HTML</td>
+                    <td>Thay đổi giá trị thuộc tính của một phần tử HTML</td>
                 </tr>
             </table>
+            <table>
+                <caption>Trình xử lý sự kiện</caption>
+                <tr>
+                    <th>Phương thức</th>
+                    <th>Mô tả</th>
+                </tr>
+                <tr>
+                    <td>document.getElementById(id).onclick = function(){code}</td>
+                    <td>Thêm mã xử lý sự kiện onclick</td>
+                </tr>
+            </table>
+            <p class="level3">
+                JS Window
+            </p>
+            <p>Đối tượng window được hỗ trợ trên tất cả trình duyệt. Nó đại diện cho cửa sổ của trình duyệt.</p>
+            <p>Tất cả các đối tượng, hàm và biến JavaScript toàn cục sẽ tự động trở thành thành viên của đối tượng window.</p>
+            <p>Các biến toàn cục là thuộc tính của đối tượng window.</p>
+            <p>Ngay cả đối tượng tài liệu (của HTML DOM) cũng là một thuộc tính của đối tượng cửa sổ:</p>
+            <div class="example_list">
+                window.document.getElementById("header");<br><br>
+                document.getElementById("header");
+            </div>
+            <p>Hai thuộc tính có thể được sử dụng để xác định kích thước cửa sổ trình duyệt.</p>
+            <p>Cả hai thuộc tính đều trả về kích thước bằng pixel:</p>
+            <div class="example_list">
+                window.innerWidth - chiều cao bên trong cửa sổ trình duyệt (tính bằng pixel) <br><br>
+                window.innerWidth - chiều rộng bên trong của cửa sổ trình duyệt (tính bằng pixel)
+
+            </div>
+            <p class="level3">
+                JS Math
+            </p>
+            <p><i>Đối tượng toán học</i>
+            </p>
+            <p>- Không giống như các đối tượng khác, đối tượng Math không có hàm tạo.</p>
+            <p>- Đối tượng Math là tĩnh.</p>
+            <p>- Tất cả các phương thức và thuộc tính có thể được sử dụng mà không cần tạo đối tượng Math trước.</p>
+            <p><i>Thuộc tính toán học</i></p>
+            <p>Cú pháp cho các thuộc tính Math là: <i>Math.property</i></p>
+            <p>JavaScript cung cấp 8 hằng số toán học có thể được truy cập dưới dạng thuộc tính Toán học:</p>
+            <div class="example_list">
+                <img style="width:55%;" src="file_ảnh_btl_web/vd_math1.jpg" alt="">
+                <img style="width:40%;" src="file_ảnh_btl_web/vd_math2.jpg" alt="">   
+            </div>
+            <p><i>Phương thức toán học</i></p>
+            <p>Cú pháp cho các phương thức toán học là: <i>Math.method(number)</i></p>
+            <p>Có 4 thuộc tính làm tròn một số thường dùng là:</p>
+            <table>
+                <tr>
+                    <th>Phương thúc</th>
+                    <th>Mô tả</th>
+                </tr>
+                <tr>
+                    <td>Math.round(x)</td>
+                    <td>Làm tròn số gần nhất </td>
+                </tr>
+                <tr>
+                    <td>Math.ceil(x)</td>
+                    <td>Làm tròn lên số gần nhất</td>
+                </tr>
+                <tr>
+                    <td>Math.floor(x)</td>
+                    <td>Làm tròn xuống số gần nhất</td>
+                </tr>
+                <tr>
+                    <td>Math.trunc(x)</td>
+                    <td>Lấy phần nguyên</td>
+                </tr>
+            </table>
+            <h4>5. Giới thiệu XML, JSON, AJAX</h4>
+            <p class="level3">XML</p>
+            <p>XML cũng là một ngôn ngữ đánh dấu như  HTML.</p>
+            <p>XML là viết tắt của EXtensible Markup Language.</p>
+            <p>Trong XML sẽ có các cặp thẻ do người dùng tự định nghĩa. </p>
+            <p> XML là nơi để lưu trữ và vận chuyển dữ liệu, khác với HTML là nơi để hiển thị dữ liệu. </p>
+            <p>Có thể hiểu đơn giản XML như là một cơ sở dữ liệu dạng nhỏ. </p>
+            <p>Hai điểm khác nhau chủ yếu giữa XML và HTML là gì. </p>
+            <p>- XML không định nghĩa một tập các thẻ cụ thể. </p>
+            <p>- XML thực sự “kén chọn” cấu trúc tài liệu. </p>
+            <p> Với XMLsẽ cung cấp cho bạn nhiều đặc quyền hơn HTML.</p>
+            <p>HTML có một tập hợp thẻ cụ thể: thẻ &lt;a&gt; bao quanh một link, thẻ &lt;p&gt; bắt đầu một đoạn văn, …
+                Tuy nhiên, một tài liệu XML có thể sử dụng bất kỳ thẻ nào bạn muốn. Đặt thẻ &lt;rating&gt;
+                xung quanh một movie rating, thẻ &lt;height&gt; xung quanh độ cao của người nào đó. 
+    Vì thế, XML cung cấp cho bạn tùy chọn để cơ cấu các thẻ cho riêng bạn.</p>
+            <p class="level3">
+                JSON
+            </p>
+            <p>JSON là viết tắt của JavaScript Object Notation,
+                là một kiểu định dạng dữ liệu tuân theo một quy luật nhất định mà hầu hết các ngôn ngữ lập trình hiện nay đều có thể đọc được.
+                JSON là một tiêu chuẩn mở để trao đổi dữ liệu trên web</p>
         </div>
 </body>
 </html>
