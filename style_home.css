@@ -67,7 +67,7 @@ body {
 
 .main {
     background-color: whitesmoke;
-    margin: 95px 85px 0px 85px;
+    margin: 60px 85px 0px 85px;
     position: relative;
     z-index: 100;
 }
@@ -189,6 +189,7 @@ body {
     display: flex;
     background-color: whitesmoke;
 }
+
 
 .search input {
     width: inherit;
