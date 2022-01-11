@@ -28,23 +28,62 @@ hr {
 
 body {
     background-color: var(--trang);
+    display: flex;
+    justify-content: center;
+    width: 101%;
+}
+
+.left {
+    width: 13%;
+    height: 100%;
+    background-color: white;
+}
+
+.left .mucluc {
+    position: fixed;
+    width: 13%;
+    border-left: 1px solid grey;
+    height: 100%;
+    background-color: white;
+}
+
+.left .mucluc p {
+    background-color: var(--trang);
+    padding: 10.6px 0px 10.6px 10px;
+    border-radius: 8px;
+}
+
+.left .mucluc li {
+    list-style: none;
+    line-height: 23px;
+    padding-left: 10px;
+}
+
+.left .mucluc li a {
+    text-decoration: none;
+}
+
+.right {
+    width: 80%;
+    background-color: white;
+    border-left: grey 1px solid;
 }
 
 .header {
-    height: 120px;
+    height: 160px;
     display: flex;
-    justify-content: center;    
+    justify-content: center;  
+    background: url(file_ảnh_btl_web/nenhtml.jpg);
+    background-size:77%;
+    background-repeat: repeat-x;  
+    margin-top: 20px;
 }
 
 .title {
-    width: 65%;
-    background: url(file_ảnh_btl_web/nenhtml.png);
-    background-size:50%;
-    background-repeat: repeat-x;
+    width: 100%;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 95px;
     position: relative;
-    border-bottom: 2px solid var(--xanh);
 }
 
 .title a {
@@ -53,15 +92,47 @@ body {
 }
 
 .icon_float {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     background: url(file_ảnh_btl_web/HTMLicon.jpg);
     border: 2px solid var(--xanh);
     border-radius: 50%;
-    background-size: 70px;
-    top:85px;
+    background-size: 50px;
+    top:57px;
     position: absolute;
     outline: 3px solid var(--trang);
+}
+
+.menu {
+    width: 80.8%;
+    padding: 10px 0px;
+    background: white;
+    position: fixed;
+    z-index: 100;
+    top: 0px;
+    border-bottom: 2px grey solid;
+}
+
+.menu ul   {
+    display: flex;
+    list-style: none;
+}
+
+.menu ul li {
+    padding-left: 18px;
+}
+
+.menu ul li > a {
+    text-decoration: none;
+    color: black;
+}
+
+li.active {
+    color: crimson;
+}
+
+li:hover {
+    color: crimson;
 }
 
 .float {
@@ -69,13 +140,21 @@ body {
     justify-content: center;
 }
 
+.fixed {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 18px;
+}
+
 .main {
-    width: 65%;
-    background-color: var(--xanh);
-    margin-top: 50px;
+    width: 100%;
+    background-color: white;
+    margin-top: 15px;
     color: rgb(0, 0, 0);
     padding: 20px;
     box-sizing: border-box;
+    z-index: 10;
 }
 
 .main h4 {
@@ -122,3 +201,14 @@ table {
 .example_list li {
     margin-left: 25px;
 }
+
+@media screen and (max-width: 800px) {
+    .main, .menu, .title {
+        width: 100%;/*The width is 100%, when the viewport is 800px or smaller */
+    }
+
+    .menu {
+        margin-left: 0;
+    }
+} 
+

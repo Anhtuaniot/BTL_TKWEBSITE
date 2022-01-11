@@ -24,7 +24,7 @@ hr {
 :root {
     --xam: #BCBABE;
     --xanh: #90AFC5;
-    --trang: #F1F1F2;
+    --trang: white;
 }
 
 body {
@@ -32,20 +32,20 @@ body {
 }
 
 .header {
-    height: 120px;
+    height: 160px;
     display: flex;
     justify-content: center;    
 }
 
 .title {
     width: 65%;
-    background: url(file_ảnh_btl_web/nenhtml.png);
-    background-size:50%;
+    background: url(file_ảnh_btl_web/nenhtml.jpg);
+    background-size:77%;
     background-repeat: repeat-x;
     text-align: center;
     margin-top: 20px;
     position: relative;
-    border-bottom: 2px solid var(--xanh);
+    
 }
 
 .title a {
@@ -53,16 +53,56 @@ body {
     color: rgb(0, 0, 0);
 }
 
+.fixed {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 18px;
+}
+
 .icon_float {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     background: url(file_ảnh_btl_web/CSSicon.jpg);
     border: 2px solid var(--xanh);
     border-radius: 50%;
-    background-size: 70px;
+    background-size: 50px;
     top:85px;
     position: absolute;
     outline: 3px solid var(--trang);
+}
+
+
+.menu {
+    width: 65%;
+    margin-left: 17.5%;
+    padding: 10px 0px;
+    background: white;
+    position: fixed;
+    z-index: 100;
+    top: 0px;
+}
+
+.menu ul   {
+    display: flex;
+    list-style: none;
+}
+
+.menu ul li {
+    padding-right: 10px;
+}
+
+.menu ul li > a {
+    text-decoration: none;
+    color: black;
+}
+
+li.active {
+    color: crimson;
+}
+
+li:hover {
+    color: crimson;
 }
 
 .float {
@@ -73,10 +113,11 @@ body {
 .main {
     width: 65%;
     background-color: var(--xanh);
-    margin-top: 50px;
+    margin-top: 162px;
     color: rgb(0, 0, 0);
     padding: 20px;
     box-sizing: border-box;
+    z-index: 10px;
 }
 
 .main h4 {
@@ -130,7 +171,11 @@ div.ava::after {
 }
 
 @media screen and (max-width: 800px) {
-    .main, .title  {
+    .main, .menu, .title {
         width: 100%;/*The width is 100%, when the viewport is 800px or smaller */
+    }
+
+    .menu {
+        margin-left: 0;
     }
 } 

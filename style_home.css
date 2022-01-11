@@ -176,8 +176,26 @@ body {
 }
 
 .list {
-    width: 63%;
+    width: 69%;
     margin-top: 25px;
+}
+
+.home > li ion-icon {
+    display: none;
+}
+
+.home > li:first-child ion-icon {
+    display: inline-block;
+    color: crimson;
+}
+
+.home > li:hover ion-icon {
+    display: inline-block;
+    color: crimson;
+}
+
+.home > li:hover a {
+    color: crimson;
 }
 
 .search {

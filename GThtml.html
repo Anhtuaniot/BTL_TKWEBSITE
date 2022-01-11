@@ -9,327 +9,355 @@
     <title>Giới thiệu HTML</title>
 </head>
 <body>
-    <div class="header">
-        <div class="title">
-            <a href="index.html" title="Trở về trang chủ">
-                <h1>Blog</h1>
-                <p><i>Bài tập lớn thiết kế Website</i></p>
-            </a>
+    <div class="left">
+        <div class="mucluc">
+            <p><b>Danh mục</b></p>
+            <ul>
+                <li><a href="#overview">Tổng quan HTML</a></li>
+                <li><a href="#format">Thẻ định dạng đoạn</a></li>
+                <li><a href="#link">Siêu liên kết</a></li>
+                <li><a href="#list">Danh sách</a></li>
+                <li><a href="#table">Bảng</a></li>
+                <li><a href="#div">Xử lý khối</a></li>
+                <li><a href="#image">Hình ảnh</a></li>
+                <li><a href="#graphic">Đồ họa SVG và Canvas</a></li>
+            </ul>
         </div>
     </div>
-    <div class="float">
-        <div class="icon_float">
-                
+    <div class="right">
+        <div class="float">
+            <div class="icon_float">
+                    
+            </div>
         </div>
-    </div>
-    <div class="float">
-        <div class="main">
-            <h2 style="text-align: center;">Giới thiệu HTML</h2>
-            <h4>1. Tổng quan HTML</h4>
-            <p>HTML (viết tắt của từ HyperText Markup Language, hay là "Ngôn ngữ Đánh dấu Siêu văn bản") 
-                là một ngôn ngữ đánh dấu được thiết kế ra để tạo nên các trang web trên World Wide Web. 
-                Nó có thể được trợ giúp bởi các công nghệ như CSS và các ngôn ngữ kịch bản giống như JavaScript.</p>
-            <p>Các trình duyệt web nhận tài liệu HTML từ một web server hoặc một kho lưu trữ cục bộ và 
-                render tài liệu đó thành các trang web đa phương tiện. HTML mô tả cấu trúc của một trang web về 
-                mặt ngữ nghĩa và các dấu hiệu ban đầu được bao gồm cho sự xuất hiện của tài liệu.</p>
-            <p>Các phần tử HTML là các khối xây dựng của các trang HTML. Với cấu trúc HTML, 
-                hình ảnh và các đối tượng khác như biểu mẫu tương tác có thể được nhúng vào trang được hiển thị. 
-                HTML cung cấp một phương tiện để tạo tài liệu có cấu trúc bằng cách biểu thị ngữ nghĩa cấu trúc cho văn bản như headings, 
-                paragraphs, lists, links, quotes và các mục khác. Các phần tử HTML được phân định bằng các tags, 
-                được viết bằng dấu ngoặc nhọn. Các tags như <span class="code">&lt;img/&gt;</span> và <span class="code">&lt;/input&gt;</span> giới thiệu trực tiếp nội dung vào trang. Các tags khác như <span class="code">&lt;p&gt;</span> bao quanh và cung cấp thông tin về văn bản tài liệu và có thể bao gồm các thẻ khác làm phần tử phụ. Các trình duyệt 
-                không hiển thị các thẻ HTML, nhưng sử dụng chúng để diễn giải nội dung của trang.</p>
-            <hr>
-            <h4>2. Các thẻ phổ biến trong HTML</h4>
-            <p class="level3">- Thẻ định dạng đoạn</p>
-            <p>Thẻ định dạng đoạn dùng để định dạng văn bản, đoạn văn bản theo cách trình bày của người lâp trình web
-                có thể là in nghiêng, in đậm hay xuống dòng...
-            </p>
-            <p>Dưới đây là các thẻ định dạng văn bản:</p>
-            <table>
-                <tr>
-                    <th>Tên thẻ</th>
-                    <th>Định nghĩa</th>
-                    <th>Ví dụ</th>
-                    <th>Hiển thị trên trình duyệt</th>
-                </tr>
-                <tr>
-                    <td>&lt;p&gt;</td>
-                    <td>Xác định một đoạn văn bản html</td>
-                    <td>&lt;p&gt;Ta là Bụt đây! vì sao con khóc&lt;/p&gt;</td>
-                    <td>Ta là Bụt đây! vì sao con khóc</td>
-                </tr>
-                <tr>
-                    <td>&lt;br&gt;</td>
-                    <td>Dùng để ngắt đoạn văn bản</td>
-                    <td>&lt;p&gt;Ta là Bụt đây! &lt;br&gt;
-                        vì sao con khóc&lt;/p&gt;
-                    </td>
-                    <td>Ta là Bụt đây! <br>vì sao con khóc</td>
-                </tr>
-                <tr>
-                    <td>&lt;pre&gt;</td>
-                    <td>Xác định đoạn văn bản được giữ nguyên định dạng như người dùng soạn thảo</td>
-                    <td><pre>&lt;pre&gt;
-        Mang tiền về cho mẹ!
-        Mang tiền về cho mẹ!
-        Mang tiền về cho mẹ! 
-        Đừng mang ưu phiền về cho mẹ!
-          &lt;/pre&gt;
-                    </pre></td>
-                    <td><pre>
-        Mang tiền về cho mẹ!
-        Mang tiền về cho mẹ!
-        Mang tiền về cho mẹ!
-        Đừng mang ưu phiền về cho mẹ!
-                    </pre></td>
-                </tr>
-                <tr>
-                    <td>&lt;b&gt;</td>
-                    <td>Xác định văn bản in đậm</td>
-                    <td>&lt;p&gt;Tôi sống ở&lt;b&gt;Việt Nam&lt;/b&gt;&lt;/p&gt;</td>
-                    <td>Tôi sống ở <b>Việt Nam</b></td>
-                </tr>
-                <tr>
-                    <td>&lt;strong&gt;</td>
-                    <td>Xác định văn bản quan trọng</td>
-                    <td>&lt;strong&gt;Đã lái xe thì đừng uống rượu bia&lt;/strong&gt;</td>
-                    <td><strong>Đã lái xe thì đừng uống rượu bia</strong></td>
-                </tr>
-                <tr>
-                    <td>&lt;i&gt;</td>
-                    <td>Xác định đoạn văn bản in nghiêng</td>
-                    <td>&lt;i&gt;Cho đi để nhận lại...&lt;/i&gt;</td>
-                    <td><i>Cho đi để nhận lại...</i></td>
-                </tr>
-                <tr>
-                    <td>&lt;em&gt;</td>
-                    <td>Xác định văn bản nhấn mạnh</td>
-                    <td>&lt;em&gt;Mang tiền về cho mẹ!&lt;/em&gt;</td>
-                    <td><em>Mang tiền về cho mẹ!</em></td>
-                </tr>
-                <tr>
-                    <td>&lt;mark&gt;</td>
-                    <td>Xác định văn bản đánh dấu</td>
-                    <td>&lt;mark&gt;Ngày hôm nay tiêu hết 5 chục&lt;/mark&gt;</td>
-                    <td><mark>Ngày hôm nay tiêu hết 5 chục</mark></td>
-                </tr>
-                <tr>
-                    <td>&lt;small&gt;</td>
-                    <td>Xác định văn bản nhỏ</td>
-                    <td>&lt;small&gt;Để làm điều lớn lao trước tiên làm những việc nhỏ nhặt&lt;/small&gt;</td>
-                    <td><small>Để làm điều lớn lao trước tiên làm những việc nhỏ nhặt</small></td>
-                </tr>
-                <tr>
-                    <td>&lt;del&gt;</td>
-                    <td>Xác định văn bản đã xóa</td>
-                    <td>&lt;del&gt;Nợ 50k&lt;/del&gt;</td>
-                    <td><del>Nợ 50k</del></td>
-                </tr>
-                <tr>
-                    <td>&lt;ins&gt;</td>
-                    <td>Xác định văn bản đã chèn</td>
-                    <td>&lt;ins&gt;văn bản đã chèn &lt;/ins&gt;</td>
-                    <td><ins>Văn bản đã chèn</ins></td>
-                </tr>
-            </table>
-            <p class="level3">- Thẻ siêu liên kết</p>
-            <p>Thẻ siêu liên kết định nghĩa một liên kết, khi nhấp vào chúng ta có thẻ chuyển đến
-                một tài liệu, hay một trang web khác.
-            </p>
-            <p>Một liên kết có thể là văn bản, hình ảnh hay bất kì phần tử HTML nào.</p>
-            <p>Thẻ <span class="code">&lt;a&gt;</span> dùng để xác định một liên kết. Cú pháp:</p>
-            <span style="background-color:whitesmoke;">&lt;a href="url"&gt;link text&lt;/a&gt;</span>
-            <p style="margin-top: 20px;">Thuộc tính href để chỉ ra điểm đến của liên kết</p>
-            <p>link text là phần mà sẽ được hiển thị cho người đọc</p>
-            <p>Theo mặc định trang được liên kết sẽ hiển thị trong cửa sổ của trình duyệt hiện tại,
-                để thay đổi điều này chúng thêm thuộc tính target vào thẻ để quy định nơi để tài liệu vào 
-                liên kết. 
-            </p>
-            Ví dụ: <span style="background-color:whitesmoke;">&lt;a href="https://www.w3schools.com/" target="_blank"&gt;link text&lt;/a&gt;</span>
-            <p>Thuộc tính target có các giá trị dưới đây:</p>
-            <table>
-                <tr>
-                    <th>Giá trị</th>
-                    <th>Ý nghĩa</th>
-                </tr>
-                <tr>
-                    <td>_self</td>
-                    <td>Mở tài liệu trong cùng một cửa sổ.</td>
-                </tr>
-                <tr>
-                    <td>_blank</td>
-                    <td>Mở tài liệu trong cửa sổ hoặc tab mới.</td>
-                </tr>
-            </table>
-            <p class="level3">- Danh sách trong HTML</p>
-            <p>Danh sách trong HTML cho phép chúng ta nhóm một tập hợp các mục có liên quan trong danh sách.</p>
-            <div class="example_list">
-                Ví dụ:
-                <ul>
-                    Danh sách không có thứ tự:
-                    <li>Trứng gà</li>
-                    <li>Trứng vịt</li>
-                    <li>Trứng vịt lộn</li>
-                </ul>
-                <ol>
-                    Danh sách có thứ tự:
-                    <li>Mục 1</li>
-                    <li>Mục 2</li>
-                    <li>Mục 3</li>
-                </ol>
+        <div class="header">
+            <div class="title">
+                <a href="index.html" title="Trở về trang chủ">
+                    <h1>Blog</h1>
+                    <p><i>Bài tập lớn thiết kế Website</i></p>
+                </a>
             </div>
-            <p>Danh sách không theo thứ tự bắt đầu bằng thẻ <span class="code">&lt;ul&gt;</span>. Danh sách có thứ tự bắt đầu bằng thẻ <span class="code">&lt;ol&gt;</span>. Mỗi danh sách bắt đầu bằng thẻ <span class="code">&lt;li&gt;</span></p> 
-            <div class="example_list">
-                Ví dụ:
-            <pre>
-            &lt;ul&gt;
-                &lt;li&gt;Trứng gà&lt;/li&gt;
-                &lt;li&gt;Trứng vịt&lt;/li&gt;
-                &lt;li&gt;Trứng vịt lộn&lt;/li&gt;
-            &lt;/ul&gt;
-            </pre>
-            <pre>
-            &lt;ol&gt;
-                &lt;li&gt;Mục 1&lt;/li&gt;
-                &lt;li&gt;Mục 2&lt;/li&gt;
-                &lt;li&gt;Mục 3 &lt;/li&gt;
-            &lt;/ol&gt;
-            </pre>
-            </div>
-            <p>Danh sách mô tả dùng để mô tả các thuật ngữ. Danh sách mô tả bắt đầu bằng thẻ <span class="code">&lt;dl&gt;</span>, 
-            thẻ <span class="code">&lt;dt&gt;</span>dùng để định nghĩa thuật ngữ, và các thẻ <span class="code">&lt;dd&gt;</span>
-            dùng để mô tả hạng mục của các thuật ngữ.</p>
-            <div class="example_list">
-            <pre>
-Ví dụ:  &lt;dl&gt;
-                &lt;dt&gt;Coffee&lt;/dt&gt;
-                &lt;dd&gt;- black hot drink&lt;/dd&gt;
-                &lt;dt&gt;Milk&lt;/dt&gt;
-                &lt;dd&gt;- white cold drink&lt;/dd&gt;
-            &lt;/dl&gt;
-            </pre>
-            <dl>
-                <dt>Coffee</dt>
-                <dd>- black hot drink</dd>
-                <dt>Milk</dt>
-                <dd>- white cold drink</dd>
-            </dl>
-            </div>
-            <p class="level3">- Bảng trong HTML</p>
-            <p>Bảng trong HTML cho phép chúng ta sắp xếp dữ liệu thành các hàng và và cột</p>
-            Ví dụ:
-            <table>
-                <tr>
-                  <th>Company</th>
-                  <th>Contact</th>
-                  <th>Country</th>
-                </tr>
-                <tr>
-                  <td>Alfreds Futterkiste</td>
-                  <td>Maria Anders</td>
-                  <td>Germany</td>
-                </tr>
-                <tr>
-                  <td>Centro comercial Moctezuma</td>
-                  <td>Francisco Chang</td>
-                  <td>Mexico</td>
-                </tr>
-                <tr>
-                  <td>Ernst Handel</td>
-                  <td>Roland Mendel</td>
-                  <td>Austria</td>
-                </tr>
-              </table>
-              <p>Thẻ <span class="code">&lt;table&gt;</span> để xác định một bảng, thẻ <span class="code">&lt;tr&gt;</span> để xác định
-                một hàng trong bảng và thẻ <span class="code">&lt;td&gt;</span> để xác định một ô của mỗi hàng trong bảng.</p>
-            <div class="example_list">
-                Ví dụ:
-            <pre>
-                &lt;table&gt;
-                    &lt;tr&gt;
-                        &lt;td&gt;Company&lt;/td&gt;
-                        &lt;td&gt;Contact&lt;/td&gt;
-                        &lt;td&gt;Country&lt;/td&gt;
-                    &lt;/tr&gt;
-                    &lt;tr&gt;
-                        &lt;td&gt;Alfreds Futterkiste&lt;/td&gt;
-                        &lt;td&gt;Maria Anders&lt;/td&gt;
-                        &lt;td&gt;Germany&lt;/td&gt;
-                    &lt;/tr&gt;
-                    &lt;tr&gt;
-                        &lt;td&gt;Centro comercial Moctezuma&lt;/td&gt;
-                        &lt;td&gt;Francisco Chang&lt;/td&gt;
-                        &lt;td&gt;Mexico&lt;/td&gt;
-                    &lt;/tr&gt;
-                &lt;/table&gt;
-            </pre>
-            </div>
-            <p class="level3">- Xử lý khối trong HTML</p>
-            <p>Mọi phần tử HTML đều có giá trị hiển thị mặc định, tùy thuộc vào loại
-                phần tử đó là gì.
-            </p>
-            <p>Có hai loại giá trị hiển thị đó là Khối và nội tuyến.</p>
-            <p>Phần tử cấp khối luôn bắt đầu trên một dòng mới và chiếm toàn bộ chiều rộng có sẵn.</p>
-            <p>Ví dụ:</p>
-            <div style="border: 1px solid grey; margin-bottom: 4px;">Phần tử &lt;div&gt; là phần tử cấp khối</div>
-            <span style="border: 1px solid grey; ">Phần tử &lt;span&gt; là phần tử nội tuyến </span>
-            <p>Phần tử cấp khối có thể chứa các phần tử khác và có lề trên và lề dưới còn phần tử nội tuyến thì không chứa được các 
-                phần tử khác và không có lề trên, dưới.
-            </p>
-            <div class="example_list">
-                <div>
-                    <p>Các phần tử cấp khối:</p>
-            <img src="file_ảnh_btl_web/blockelement.jpg" alt="" style="width: 100%;">
-            <p>Các phần tử nội tuyến:</p>
-            <img src="file_ảnh_btl_web/inlineelement.jpg" style="width: 100%;" alt="">
+        </div>
+        
+        <div class="menu">
+            <ul>
+                <li><ion-icon name="home"></ion-icon> <a href="index.html">Home</a></li>
+                <li class="active"><ion-icon name="chevron-forward"></ion-icon><a style="color: crimson;" href="GThtml.html">Giới thiệu HTML</a></li>
+                <li><ion-icon name="chevron-forward"></ion-icon> <a href="GTcss.html">Giới thiệu CSS</a></li>
+                <li><ion-icon name="chevron-forward"></ion-icon> <a href="GTjs.html">Giới thiệu Javascript</a></li>
+            </ul>
+        </div>
+        <div class="float">        
+            <div class="main">
+                <h4 id="overview">1. Tổng quan HTML</h4>
+                <p>HTML (viết tắt của từ HyperText Markup Language, hay là "Ngôn ngữ Đánh dấu Siêu văn bản") 
+                    là một ngôn ngữ đánh dấu được thiết kế ra để tạo nên các trang web trên World Wide Web. 
+                    Nó có thể được trợ giúp bởi các công nghệ như CSS và các ngôn ngữ kịch bản giống như JavaScript.</p>
+                <p>Các trình duyệt web nhận tài liệu HTML từ một web server hoặc một kho lưu trữ cục bộ và 
+                    render tài liệu đó thành các trang web đa phương tiện. HTML mô tả cấu trúc của một trang web về 
+                    mặt ngữ nghĩa và các dấu hiệu ban đầu được bao gồm cho sự xuất hiện của tài liệu.</p>
+                <p>Các phần tử HTML là các khối xây dựng của các trang HTML. Với cấu trúc HTML, 
+                    hình ảnh và các đối tượng khác như biểu mẫu tương tác có thể được nhúng vào trang được hiển thị. 
+                    HTML cung cấp một phương tiện để tạo tài liệu có cấu trúc bằng cách biểu thị ngữ nghĩa cấu trúc cho văn bản như headings, 
+                    paragraphs, lists, links, quotes và các mục khác. Các phần tử HTML được phân định bằng các tags, 
+                    được viết bằng dấu ngoặc nhọn. Các tags như <span class="code">&lt;img/&gt;</span> và <span class="code">&lt;/input&gt;</span> giới thiệu trực tiếp nội dung vào trang. Các tags khác như <span class="code">&lt;p&gt;</span> bao quanh và cung cấp thông tin về văn bản tài liệu và có thể bao gồm các thẻ khác làm phần tử phụ. Các trình duyệt 
+                    không hiển thị các thẻ HTML, nhưng sử dụng chúng để diễn giải nội dung của trang.</p>
+                <hr>
+                <h4 id="format">2. Thẻ định dạng đoạn</h4>
+                <p>Thẻ định dạng đoạn dùng để định dạng văn bản, đoạn văn bản theo cách trình bày của người lâp trình web
+                    có thể là in nghiêng, in đậm hay xuống dòng...
+                </p>
+                <p>Dưới đây là các thẻ định dạng văn bản:</p>
+                <table>
+                    <tr>
+                        <th>Tên thẻ</th>
+                        <th>Định nghĩa</th>
+                        <th>Ví dụ</th>
+                        <th>Hiển thị trên trình duyệt</th>
+                    </tr>
+                    <tr>
+                        <td>&lt;p&gt;</td>
+                        <td>Xác định một đoạn văn bản html</td>
+                        <td>&lt;p&gt;Ta là Bụt đây! vì sao con khóc&lt;/p&gt;</td>
+                        <td>Ta là Bụt đây! vì sao con khóc</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;br&gt;</td>
+                        <td>Dùng để ngắt đoạn văn bản</td>
+                        <td>&lt;p&gt;Ta là Bụt đây! &lt;br&gt;
+                            vì sao con khóc&lt;/p&gt;
+                        </td>
+                        <td>Ta là Bụt đây! <br>vì sao con khóc</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;pre&gt;</td>
+                        <td>Xác định đoạn văn bản được giữ nguyên định dạng như người dùng soạn thảo</td>
+                        <td><pre>&lt;pre&gt;
+            Mang tiền về cho mẹ!
+            Mang tiền về cho mẹ!
+            Mang tiền về cho mẹ! 
+            Đừng mang ưu phiền về cho mẹ!
+              &lt;/pre&gt;
+                        </pre></td>
+                        <td><pre>
+            Mang tiền về cho mẹ!
+            Mang tiền về cho mẹ!
+            Mang tiền về cho mẹ!
+            Đừng mang ưu phiền về cho mẹ!
+                        </pre></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;b&gt;</td>
+                        <td>Xác định văn bản in đậm</td>
+                        <td>&lt;p&gt;Tôi sống ở&lt;b&gt;Việt Nam&lt;/b&gt;&lt;/p&gt;</td>
+                        <td>Tôi sống ở <b>Việt Nam</b></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;strong&gt;</td>
+                        <td>Xác định văn bản quan trọng</td>
+                        <td>&lt;strong&gt;Đã lái xe thì đừng uống rượu bia&lt;/strong&gt;</td>
+                        <td><strong>Đã lái xe thì đừng uống rượu bia</strong></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;i&gt;</td>
+                        <td>Xác định đoạn văn bản in nghiêng</td>
+                        <td>&lt;i&gt;Cho đi để nhận lại...&lt;/i&gt;</td>
+                        <td><i>Cho đi để nhận lại...</i></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;em&gt;</td>
+                        <td>Xác định văn bản nhấn mạnh</td>
+                        <td>&lt;em&gt;Mang tiền về cho mẹ!&lt;/em&gt;</td>
+                        <td><em>Mang tiền về cho mẹ!</em></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;mark&gt;</td>
+                        <td>Xác định văn bản đánh dấu</td>
+                        <td>&lt;mark&gt;Ngày hôm nay tiêu hết 5 chục&lt;/mark&gt;</td>
+                        <td><mark>Ngày hôm nay tiêu hết 5 chục</mark></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;small&gt;</td>
+                        <td>Xác định văn bản nhỏ</td>
+                        <td>&lt;small&gt;Để làm điều lớn lao trước tiên làm những việc nhỏ nhặt&lt;/small&gt;</td>
+                        <td><small>Để làm điều lớn lao trước tiên làm những việc nhỏ nhặt</small></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;del&gt;</td>
+                        <td>Xác định văn bản đã xóa</td>
+                        <td>&lt;del&gt;Nợ 50k&lt;/del&gt;</td>
+                        <td><del>Nợ 50k</del></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;ins&gt;</td>
+                        <td>Xác định văn bản đã chèn</td>
+                        <td>&lt;ins&gt;văn bản đã chèn &lt;/ins&gt;</td>
+                        <td><ins>Văn bản đã chèn</ins></td>
+                    </tr>
+                </table>
+                <h4 id="link">3. Siêu liên kết</h4>
+                <p>Thẻ siêu liên kết định nghĩa một liên kết, khi nhấp vào chúng ta có thẻ chuyển đến
+                    một tài liệu, hay một trang web khác.
+                </p>
+                <p>Một liên kết có thể là văn bản, hình ảnh hay bất kì phần tử HTML nào.</p>
+                <p>Thẻ <span class="code">&lt;a&gt;</span> dùng để xác định một liên kết. Cú pháp:</p>
+                <span style="background-color:whitesmoke;">&lt;a href="url"&gt;link text&lt;/a&gt;</span>
+                <p style="margin-top: 20px;">Thuộc tính href để chỉ ra điểm đến của liên kết</p>
+                <p>link text là phần mà sẽ được hiển thị cho người đọc</p>
+                <p>Theo mặc định trang được liên kết sẽ hiển thị trong cửa sổ của trình duyệt hiện tại,
+                    để thay đổi điều này chúng thêm thuộc tính target vào thẻ để quy định nơi để tài liệu vào 
+                    liên kết. 
+                </p>
+                Ví dụ: <span style="background-color:whitesmoke;">&lt;a href="https://www.w3schools.com/" target="_blank"&gt;link text&lt;/a&gt;</span>
+                <p>Thuộc tính target có các giá trị dưới đây:</p>
+                <table>
+                    <tr>
+                        <th>Giá trị</th>
+                        <th>Ý nghĩa</th>
+                    </tr>
+                    <tr>
+                        <td>_self</td>
+                        <td>Mở tài liệu trong cùng một cửa sổ.</td>
+                    </tr>
+                    <tr>
+                        <td>_blank</td>
+                        <td>Mở tài liệu trong cửa sổ hoặc tab mới.</td>
+                    </tr>
+                </table>
+                <h4 id="list">4. Danh sách trong HTML</h4>
+                <p>Danh sách trong HTML cho phép chúng ta nhóm một tập hợp các mục có liên quan trong danh sách.</p>
+                <div class="example_list">
+                    Ví dụ:
+                    <ul>
+                        Danh sách không có thứ tự:
+                        <li>Trứng gà</li>
+                        <li>Trứng vịt</li>
+                        <li>Trứng vịt lộn</li>
+                    </ul>
+                    <ol>
+                        Danh sách có thứ tự:
+                        <li>Mục 1</li>
+                        <li>Mục 2</li>
+                        <li>Mục 3</li>
+                    </ol>
                 </div>
+                <p>Danh sách không theo thứ tự bắt đầu bằng thẻ <span class="code">&lt;ul&gt;</span>. Danh sách có thứ tự bắt đầu bằng thẻ <span class="code">&lt;ol&gt;</span>. Mỗi danh sách bắt đầu bằng thẻ <span class="code">&lt;li&gt;</span></p> 
+                <div class="example_list">
+                    Ví dụ:
+                <pre>
+                &lt;ul&gt;
+                    &lt;li&gt;Trứng gà&lt;/li&gt;
+                    &lt;li&gt;Trứng vịt&lt;/li&gt;
+                    &lt;li&gt;Trứng vịt lộn&lt;/li&gt;
+                &lt;/ul&gt;
+                </pre>
+                <pre>
+                &lt;ol&gt;
+                    &lt;li&gt;Mục 1&lt;/li&gt;
+                    &lt;li&gt;Mục 2&lt;/li&gt;
+                    &lt;li&gt;Mục 3 &lt;/li&gt;
+                &lt;/ol&gt;
+                </pre>
+                </div>
+                <p>Danh sách mô tả dùng để mô tả các thuật ngữ. Danh sách mô tả bắt đầu bằng thẻ <span class="code">&lt;dl&gt;</span>, 
+                thẻ <span class="code">&lt;dt&gt;</span>dùng để định nghĩa thuật ngữ, và các thẻ <span class="code">&lt;dd&gt;</span>
+                dùng để mô tả hạng mục của các thuật ngữ.</p>
+                <div class="example_list">
+                <pre>
+    Ví dụ:  &lt;dl&gt;
+                    &lt;dt&gt;Coffee&lt;/dt&gt;
+                    &lt;dd&gt;- black hot drink&lt;/dd&gt;
+                    &lt;dt&gt;Milk&lt;/dt&gt;
+                    &lt;dd&gt;- white cold drink&lt;/dd&gt;
+                &lt;/dl&gt;
+                </pre>
+                <dl>
+                    <dt>Coffee</dt>
+                    <dd>- black hot drink</dd>
+                    <dt>Milk</dt>
+                    <dd>- white cold drink</dd>
+                </dl>
+                </div>
+                <h4 id="table">5. Bảng trong HTML</h4>
+                <p>Bảng trong HTML cho phép chúng ta sắp xếp dữ liệu thành các hàng và và cột</p>
+                Ví dụ:
+                <table>
+                    <tr>
+                      <th>Company</th>
+                      <th>Contact</th>
+                      <th>Country</th>
+                    </tr>
+                    <tr>
+                      <td>Alfreds Futterkiste</td>
+                      <td>Maria Anders</td>
+                      <td>Germany</td>
+                    </tr>
+                    <tr>
+                      <td>Centro comercial Moctezuma</td>
+                      <td>Francisco Chang</td>
+                      <td>Mexico</td>
+                    </tr>
+                    <tr>
+                      <td>Ernst Handel</td>
+                      <td>Roland Mendel</td>
+                      <td>Austria</td>
+                    </tr>
+                  </table>
+                  <p>Thẻ <span class="code">&lt;table&gt;</span> để xác định một bảng, thẻ <span class="code">&lt;tr&gt;</span> để xác định
+                    một hàng trong bảng và thẻ <span class="code">&lt;td&gt;</span> để xác định một ô của mỗi hàng trong bảng.</p>
+                <div class="example_list">
+                    Ví dụ:
+                <pre>
+                    &lt;table&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;Company&lt;/td&gt;
+                            &lt;td&gt;Contact&lt;/td&gt;
+                            &lt;td&gt;Country&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;Alfreds Futterkiste&lt;/td&gt;
+                            &lt;td&gt;Maria Anders&lt;/td&gt;
+                            &lt;td&gt;Germany&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;Centro comercial Moctezuma&lt;/td&gt;
+                            &lt;td&gt;Francisco Chang&lt;/td&gt;
+                            &lt;td&gt;Mexico&lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/table&gt;
+                </pre>
+                </div>
+                <h4 id="div">6. Xử lý khối trong HTML</h4>
+                <p>Mọi phần tử HTML đều có giá trị hiển thị mặc định, tùy thuộc vào loại
+                    phần tử đó là gì.
+                </p>
+                <p>Có hai loại giá trị hiển thị đó là Khối và nội tuyến.</p>
+                <p>Phần tử cấp khối luôn bắt đầu trên một dòng mới và chiếm toàn bộ chiều rộng có sẵn.</p>
+                <p>Ví dụ:</p>
+                <div style="border: 1px solid grey; margin-bottom: 4px;">Phần tử &lt;div&gt; là phần tử cấp khối</div>
+                <span style="border: 1px solid grey; ">Phần tử &lt;span&gt; là phần tử nội tuyến </span>
+                <p>Phần tử cấp khối có thể chứa các phần tử khác và có lề trên và lề dưới còn phần tử nội tuyến thì không chứa được các 
+                    phần tử khác và không có lề trên, dưới.
+                </p>
+                <div class="example_list">
+                    <div>
+                        <p>Các phần tử cấp khối:</p>
+                <img src="file_ảnh_btl_web/blockelement.jpg" alt="" style="width: 100%;">
+                <p>Các phần tử nội tuyến:</p>
+                <img src="file_ảnh_btl_web/inlineelement.jpg" style="width: 100%;" alt="">
+                    </div>
+                </div>
+                <h4 id="image">7. Hình ảnh trong HTML</h4>
+                <p>Hình ảnh có thể cải thiện giao diện và thiết kế của trang web.</p>
+                <img src="file_ảnh_btl_web/vdimg1.jpg" alt="" style="width: 31.6%;">
+                <img src="file_ảnh_btl_web/vdimg2.jpg" alt="" style="width: 35.4%;">
+                <img src="file_ảnh_btl_web/vdimg3.jpg" alt="" style="width: 31.6%;">
+                <p>Cú pháp:</p>
+                <span style="background-color:whitesmoke;">&lt;img src="đường dẫn" alt="văn bản mô tả hình ảnh" style="width: chiều rộng; height: chiều cao;"/&gt;</span>
+                <h4 id="graphic">8. Canvas và đồ họa SVG</h4>
+                <p>Canvas</p>
+                <p>Thẻ <span class="code">&lt;canvas&gt;</span> được sử dụng để vẽ đồ họa một cách nhanh chóng, thông qua JavaScript</p>
+                <p>Phần tử <span class="code">&lt;canvas&gt;</span> là một vùng chứa cho đồ họa và ta phải sử dụng JavaScript để thực thi vẽ đồ họa.</p>
+                <p>về cơ bản canvas cũng giống các phần tử có tính chất khối khác, nếu không css hay js nó sẽ không có đường viền và không có nội dung</p>
+                <p>Ví dụ:</p>
+                <img src="file_ảnh_btl_web/vdcanvas1.jpg" alt="" style="width:50%"><br>
+                <canvas id="myCanvas1" width="200" height="100" style="border:1px solid #000000;">  
+                </canvas>
+                <p>Sau khi tạo vùng ta sẽ thêm JavaScript để vẽ</p>
+                <p>Ví dụ: vẽ một đường chéo</p>
+                <img src="file_ảnh_btl_web/vdcanvas2.jpg" alt="" style="width:50%"><br>
+                <canvas id="myCanvas2" width="200" height="100" style="border:1px solid #000000;">
+                </canvas>
+                <p>Ví dụ: vẽ một hình tròn</p>
+                <img src="file_ảnh_btl_web/vdcanvas3.jpg" alt="" style="width:50%"><br>
+                <canvas id="myCanvas3" width="200" height="100" style="border:1px solid #000000;">
+                </canvas>
+                <p>Ngoài ra chúng ta có thể vẽ chữ, văn bản, dải màu, hình ảnh...</p>
+                <p>Đồ họa SVG</p>
+                <P>Đồ họa SVG được định nghĩa là đồ họa dựa trên vector ở định dạng XML.</P>
+                <p>SVG là một ngôn ngữ để mô tả đồ họa 2D trong XML</p>
+                <p>Phần tử &lt;svg&gt; là vùng chứa đồ họa SVG</p>
+                <p>Ví dụ: vẽ một hình tròn</p>
+                <img src="file_ảnh_btl_web/vdsvg1.jpg" alt="" style="width:50%"><br>
+                <svg width="100" height="100">
+                    <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+                </svg>
+                <p>Ví dụ: vẽ một hình chữ nhật</p>
+                <img src="file_ảnh_btl_web/vdsvg2.jpg" alt="" style="width:50%">
+                <svg width="400" height="100">
+                    <rect width="400" height="100" style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)" />
+                </svg>
             </div>
-            <p class="level3">- Hình ảnh trong HTML</p>
-            <p>Hình ảnh có thể cải thiện giao diện và thiết kế của trang web.</p>
-            <img src="file_ảnh_btl_web/vdimg1.jpg" alt="" style="width: 31.6%;">
-            <img src="file_ảnh_btl_web/vdimg2.jpg" alt="" style="width: 35.4%;">
-            <img src="file_ảnh_btl_web/vdimg3.jpg" alt="" style="width: 31.6%;">
-            <p>Cú pháp:</p>
-            <span style="background-color:whitesmoke;">&lt;img src="đường dẫn" alt="văn bản mô tả hình ảnh" style="width: chiều rộng; height: chiều cao;"/&gt;</span>
-            <p class="level3">-  Canvas và đồ họa SVG</p>
-            <p>Canvas</p>
-            <p>Thẻ <span class="code">&lt;canvas&gt;</span> được sử dụng để vẽ đồ họa một cách nhanh chóng, thông qua JavaScript</p>
-            <p>Phần tử <span class="code">&lt;canvas&gt;</span> là một vùng chứa cho đồ họa và ta phải sử dụng JavaScript để thực thi vẽ đồ họa.</p>
-            <p>về cơ bản canvas cũng giống các phần tử có tính chất khối khác, nếu không css hay js nó sẽ không có đường viền và không có nội dung</p>
-            <p>Ví dụ:</p>
-            <img src="file_ảnh_btl_web/vdcanvas1.jpg" alt="" style="width:50%"><br>
-            <canvas id="myCanvas1" width="200" height="100" style="border:1px solid #000000;">  
-            </canvas>
-            <p>Sau khi tạo vùng ta sẽ thêm JavaScript để vẽ</p>
-            <p>Ví dụ: vẽ một đường chéo</p>
-            <img src="file_ảnh_btl_web/vdcanvas2.jpg" alt="" style="width:50%"><br>
-            <canvas id="myCanvas2" width="200" height="100" style="border:1px solid #000000;">
-            </canvas>
-            <p>Ví dụ: vẽ một hình tròn</p>
-            <img src="file_ảnh_btl_web/vdcanvas3.jpg" alt="" style="width:50%"><br>
-            <canvas id="myCanvas3" width="200" height="100" style="border:1px solid #000000;">
-            </canvas>
-            <p>Ngoài ra chúng ta có thể vẽ chữ, văn bản, dải màu, hình ảnh...</p>
-            <p>Đồ họa SVG</p>
-            <P>Đồ họa SVG được định nghĩa là đồ họa dựa trên vector ở định dạng XML.</P>
-            <p>SVG là một ngôn ngữ để mô tả đồ họa 2D trong XML</p>
-            <p>Phần tử &lt;svg&gt; là vùng chứa đồ họa SVG</p>
-            <p>Ví dụ: vẽ một hình tròn</p>
-            <img src="file_ảnh_btl_web/vdsvg1.jpg" alt="" style="width:50%"><br>
-            <svg width="100" height="100">
-                <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
-            </svg>
-            <p>Ví dụ: vẽ một hình chữ nhật</p>
-            <img src="file_ảnh_btl_web/vdsvg2.jpg" alt="" style="width:50%">
-            <svg width="400" height="100">
-                <rect width="400" height="100" style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)" />
-            </svg>
         </div>
+
     </div>
+    
     
     <div class="footer">
 
     </div>
+    <script  type = "module"  src = "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" > </script> 
+    <script  nomodule  src = "https: // unkg .com / ionicons @ 5.5.2 / dist / ionicons / ionicons.js " > </script>
     <script>
         var c = document.getElementById("myCanvas2");
         var ctx = c.getContext("2d");
