@@ -30,25 +30,25 @@ body {
     background-color: var(--trang);
     display: flex;
     justify-content: center;
-    width: 101%;
+    width: 100%;
 }
 
 .left {
-    width: 13%;
+    width: 20%;
     height: 100%;
-    background-color: white;
+   
 }
 
 .left .mucluc {
     position: fixed;
-    width: 13%;
+    width: 20%;
     border-left: 1px solid grey;
     height: 100%;
-    background-color: white;
+    background-color: rgb(243, 243, 243);
 }
 
 .left .mucluc p {
-    background-color: var(--trang);
+    background-color: var(--xanh);
     padding: 10.6px 0px 10.6px 10px;
     border-radius: 8px;
 }
@@ -57,6 +57,10 @@ body {
     list-style: none;
     line-height: 23px;
     padding-left: 10px;
+}
+
+.left .mucluc li:hover a {
+    color: crimson;
 }
 
 .left .mucluc li a {
@@ -104,7 +108,7 @@ body {
 }
 
 .menu {
-    width: 80.8%;
+    width: 80%;
     padding: 10px 0px;
     background: white;
     position: fixed;
@@ -138,14 +142,9 @@ li:hover {
 .float {
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
-.fixed {
-    position: fixed;
-    width: 100%;
-    z-index: 100;
-    top: 18px;
-}
 
 .main {
     width: 100%;

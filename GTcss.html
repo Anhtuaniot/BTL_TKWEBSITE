@@ -9,159 +9,172 @@
     <title>Giới thiệu CSS</title>
 </head>
 <body>
-    <div class="header">
-        <div class="title">
-            <a href="index.html" title="Trở về trang chủ">
-                <h1>Blog</h1>
-                <p><i>Bài tập lớn thiết kế Website</i></p>
-            </a>
+    <div class="left">
+        <div class="mucluc">
+            <p><b>Danh mục</b></p>
+            <ul>
+                <li><a href="#overview">Tổng quan CSS</a></li>
+                <li><a href="#syntax">Cú pháp và cách tạo CSS</a></li>
+                <li><a href="#selector">Bộ chọn CSS</a></li>
+                <li><a href="#format">Một số địng dạng CSS</a></li>
+                <li><a href="#review_b">Giới thiệu Bootstrap</a></li>
+            </ul>
         </div>
     </div>
-    <div class="float">
-        <div class="icon_float">
-                
+    <div class="right">
+        <div class="float">
+            <div class="icon_float">
+                    
+            </div>
         </div>
-    </div>
-    <div class="menu">
-        <ul>
-            <li><ion-icon name="home"></ion-icon> <a href="index.html">Home</a></li>
-            <li><ion-icon name="chevron-forward"></ion-icon><a href="GThtml.html">Giới thiệu HTML</a></li>
-            <li class="active"><ion-icon name="chevron-forward"></ion-icon> <a style="color: crimson;" href="GTcss.html">Giới thiệu CSS</a></li>
-            <li><ion-icon name="chevron-forward"></ion-icon> <a href="GTjs.html">Giới thiệu Javascript</a></li>
-        </ul>
-    </div>
-    <div class="float">
-        <div class="main">
-            <h4>1. Tổng quan CSS</h4>
-            <p>Cascading Style Sheets, thường được viết tắt là CSS, là một ngôn ngữ định kiểu được sử dụng để định dạng – trình bày một tài liệu HTML hoặc XML (bao gồm các ngôn ngữ XML khác nhau như SVG hoặc XHTML). CSS mô tả quy cách các phần tử được cấu trúc 
-                phải được hiển thị trên màn hình, trên giấy, trong lời nói hoặc trên các phương tiện khác.</p>
-            <p>CSS là một trong những ngôn ngữ cốt lõi của web mở và có đặc tả W3C tiêu chuẩn hóa. Được phát triển theo cấp độ, CSS1 hiện đã lỗi thời, CSS2.1 là một đề xuất và CSS3, hiện được chia thành các mô-đun nhỏ hơn, đang tiến triển trên bản theo dõi chuẩn. 
-                Bản thảo đầu tiên của các mô-đun CSS4 đang được viết.</p>
-            <h4>2. Cú pháp và cách tạo CSS</h4>
-            <p>Quy tắc CSS gồm một bộ chọn và một khối khai báo.</p>
-            <p>bộ_chọn {<br>
-                &nbsp;&nbsp;thuộc_tính: giá_trị;<br>
-                &nbsp;&nbsp;[thuộc_tính_khác: giá_trị;] <br>
-            }</p>
-            <p>Bộ chọn trỏ đến phần phần muốn tạo kiểu.</p>
-            <p>Khối khai báo chứa một hoặc nhiều khai báo được phân tách bằng dấu chấm phẩy.</p>
-            <p>Mỗi khai báo bao gồm một tên thuộc tính CSS và một giá trị, được phân tách bằng dấu hai chấm.</p>
-            <p>Nhiều khai báo CSS được phân tách bằng dấu chấm phẩy và các khối khai báo được bao quanh bởi dấu ngoặc nhọn.</p>
-            <p>Chúng ta có 3 cách tạo CSS: External(Bên ngoài), Internal(nội bộ), Inline(nội tuyến).</p>
-            <p>Với External CSS ta có thể thay đổi giao diện web bằng cách thay đổi một tệp, như vậy mỗi trang cần tham chiếu đến
-                file CSS và được đặt trong phần tử link.
-            </p>
-            <div class="example_list">
-                <p>Ví dụ:</p>
-                <img style="width: 50%;" src="file_ảnh_btl_web/vd_externalcss1.jpg" alt="">
-                <div>
-                    <p>"mystyle.css"</p>
-                    <img style="width: 40%;" src="file_ảnh_btl_web/vd_externalcss2.jpg" alt="">   
-                </div>   
+        <div class="header">
+            <div class="title">
+                <a href="index.html" title="Trở về trang chủ">
+                    <h1>Blog</h1>
+                    <p><i>Bài tập lớn thiết kế Website</i></p>
+                </a>
             </div>
-            <p>Kiểu Internal được xác định trong phần tử style, bên trong phần tử head của trang HTML.</p> 
-            <div class="example_list">
-                <p>Ví dụ:</p>
-                <img style="width: 60%;" src="file_ảnh_btl_web/vd_internal.jpg" alt="">
-            </div>
-            <p>Kiểu Inline được xác định trong thuộc tính "style" của phần tử có liên quan.</p>
-            <div class="example_list">
-                <p>Ví dụ:</p>
-                <img style="width: 60%;" src="file_ảnh_btl_web/vd_inline.jpg" alt="">
-            </div>
-            <h4>3. Bộ chọn CSS</h4>
-            <p>Bộ chọn CSS được sử dụng để tìm hoặc chọn các phần tử HTML mà bạn muốn tạo kiểu.</p>
-            <p>Chúng ta có thể chia bộ chọn thành năm loại:</p>
-            <p> - Bộ chọn đơn giản (chọn các phần tử dựa trên tên, id, lớp)</p>
-            <p> - Bộ chọn bộ kết hợp (chọn các phần tử dựa trên mối quan hệ cụ thể giữa chúng)</p>
-            <p> - Bộ chọn lớp giả (chọn phần tử dựa trên một trạng thái nhất định)</p>
-            <p> - Bộ chọn phần tử giả (chọn và tạo kiểu cho một phần của phần tử)</p>
-            <p> - Bộ chọn thuộc tính (chọn các phần tử dựa trên một thuộc tính hoặc giá trị thuộc tính)</p>
-            <div class="example_list">
-                <p>Ví dụ:</p>
-                <p>Chọn các phần tử HTML dựa trên tên phần tử:</p>
-                <img style="width: 50%;" src="file_ảnh_btl_web/vd_selector1.jpg" alt="">
-                <p>Chọn các phần tử HTML dựa trên id của phần tử:</p>
-                <img style="width: 50%;" src="file_ảnh_btl_web/vd_selector2.jpg" alt="">
-                <p>Chọn các phần tử HTML dựa trên class của phần tử:</p>
-                <img style="width: 50%;" src="file_ảnh_btl_web/vd_selector3.jpg" alt="">
-                <p>Chọn tất cả phần tử HTML:</p>
-                <img style="width: 50%;" src="file_ảnh_btl_web/vd_selector4.jpg" alt="">
-                <p>Bộ chọn nhóm chọn các phần tử có cùng định nghĩa kiểu:</p>
-                <img style="width: 50%;" src="file_ảnh_btl_web/vd_selector5.jpg" alt="">
-            </div>
-            <h4>4. Một số định dạng CSS</h4>
-            <p class="level3">CSS Text</p>
-            <p>- Thuộc tính color được sử dụng để thiết lập màu sắc của văn bản.</p>
-            <div class="example_list">
-                <p>Ví dụ:</p>
-                <img style="width: 50%;" src="file_ảnh_btl_web/vd_textcolor1.jpg" alt="">
-                <img style="width: 45%;" src="file_ảnh_btl_web/vd_textcolor2.jpg" alt="">
-            </div>
-            <p>- Thuộc tính background color sử dụng để thiết lập màu nền của văn bản.</p>
-            <div class="example_list">
-                <p>Ví dụ:</p>
-                <img style="width: 50%;" src="file_ảnh_btl_web/vd_nentext1.jpg" alt="">
-                <img style="width: 45%;" src="file_ảnh_btl_web/vd_nentext2.jpg" alt="">
-            </div>
-            <p>- Thuộc tính text-align được sử dụng để căn chỉnh văn bản theo chiều ngang.</p>
-            <p>Văn bản có thể căn trái, phải, giữa tùy thuộc giá trị mà ta chỉ định.</p>
-            <div class="example_list">
-                <p>Ví dụ:</p>
-                <img style="width: 60%;" src="file_ảnh_btl_web/vd_textalign1.jpg" alt="">
-                <img style="width: 60%;" src="file_ảnh_btl_web/vd_textalign2.jpg" alt="">
-            </div>
-            <P class="level3">CSS Margin</P>
-            <p>Lề được sử dụng để tạo không gian xung quanh các phần tử, bền ngoài đường viền.</p>
-            <p>Thuộc tính margin được sử dụng để tạo không gian xung quanh các phần tử, bên ngoài đường viền.</p>
-            <p>Các thuộc tính căn lề gồm: margin-top, margin-right, margin-bottom, margin-left</p>
-            <p>Đi kèm với thuộc tính là các giá trị: auto, length, %, inherit</p>
-            <div class="example_list">
-                <p>Ví dụ:</p>
-                <img style="width: 60%;" src="file_ảnh_btl_web/vd_margin1.jpg" alt="">
-                <img style="width: 60%;" src="file_ảnh_btl_web/vd_margin2.jpg" alt="">
-            </div>
-            <p class="level3">CSS Pseudo-classes</p>
-            <p>Một lớp giả được sử dụng để xác định trạng thái đặc biệt của một phần tử.</p>
-            <p>Ví dụ, nó có thể được sử dụng để:</p>
-            <p>Tạo kiểu cho một phần tử khi người dùng di chuột qua nó</p>
-            <p>Định dạng kiểu cho link liên kết ở các trang thái truy cập khác nhau</p>
-            <p>Tạo kiểu cho một phần tử khi nó được lấy nét(focus).</p>
-            <p>Cú pháp tạo lớp giả: <br>
-                selector:pseudo-class {
-                    property: value;
-                }
-            </p>
-            <div class="example_list">
-                <p>Ví dụ:
-                    <br>- Tạo hiệu ứng di chuột dùng hover
+        </div> 
+        <div class="menu">
+            <ul>
+                <li><ion-icon name="home"></ion-icon> <a href="index.html">Home</a></li>
+                <li><ion-icon name="chevron-forward"></ion-icon><a href="GThtml.html">Giới thiệu HTML</a></li>
+                <li class="active"><ion-icon name="chevron-forward"></ion-icon> <a style="color: crimson;" href="GTcss.html">Giới thiệu CSS</a></li>
+                <li><ion-icon name="chevron-forward"></ion-icon> <a href="GTjs.html">Giới thiệu Javascript</a></li>
+            </ul>
+        </div>
+        <div class="float">
+            <div class="main">
+                <h4 id="overview">1. Tổng quan CSS</h4>
+                <p>Cascading Style Sheets, thường được viết tắt là CSS, là một ngôn ngữ định kiểu được sử dụng để định dạng – trình bày một tài liệu HTML hoặc XML (bao gồm các ngôn ngữ XML khác nhau như SVG hoặc XHTML). CSS mô tả quy cách các phần tử được cấu trúc 
+                    phải được hiển thị trên màn hình, trên giấy, trong lời nói hoặc trên các phương tiện khác.</p>
+                <p>CSS là một trong những ngôn ngữ cốt lõi của web mở và có đặc tả W3C tiêu chuẩn hóa. Được phát triển theo cấp độ, CSS1 hiện đã lỗi thời, CSS2.1 là một đề xuất và CSS3, hiện được chia thành các mô-đun nhỏ hơn, đang tiến triển trên bản theo dõi chuẩn. 
+                    Bản thảo đầu tiên của các mô-đun CSS4 đang được viết.</p>
+                <h4 id="syntax">2. Cú pháp và cách tạo CSS</h4>
+                <p>Quy tắc CSS gồm một bộ chọn và một khối khai báo.</p>
+                <p>bộ_chọn {<br>
+                    &nbsp;&nbsp;thuộc_tính: giá_trị;<br>
+                    &nbsp;&nbsp;[thuộc_tính_khác: giá_trị;] <br>
+                }</p>
+                <p>Bộ chọn trỏ đến phần phần muốn tạo kiểu.</p>
+                <p>Khối khai báo chứa một hoặc nhiều khai báo được phân tách bằng dấu chấm phẩy.</p>
+                <p>Mỗi khai báo bao gồm một tên thuộc tính CSS và một giá trị, được phân tách bằng dấu hai chấm.</p>
+                <p>Nhiều khai báo CSS được phân tách bằng dấu chấm phẩy và các khối khai báo được bao quanh bởi dấu ngoặc nhọn.</p>
+                <p>Chúng ta có 3 cách tạo CSS: External(Bên ngoài), Internal(nội bộ), Inline(nội tuyến).</p>
+                <p>Với External CSS ta có thể thay đổi giao diện web bằng cách thay đổi một tệp, như vậy mỗi trang cần tham chiếu đến
+                    file CSS và được đặt trong phần tử link.
                 </p>
-                <img style="width: 60%;" src="file_ảnh_btl_web/vd_lovefake.jpg" alt="">
-                <p>Khi di chuột vào link nó sẽ đổi màu và font chữ</p>
-                <p><a class="highlight" href="css_syntax.asp">CSS Syntax</a></p>
-                <p>- Tạo tích xanh online dùng affter </p>
-                <div style="display:flex;">
-                    <img style="width: 60%;" src="file_ảnh_btl_web/vd_affter.jpg" alt="">
-                    <div class="ava" style="margin-left: 10px;">
+                <div class="example_list">
+                    <p>Ví dụ:</p>
+                    <img style="width: 50%;" src="file_ảnh_btl_web/vd_externalcss1.jpg" alt="">
+                    <div>
+                        <p>"mystyle.css"</p>
+                        <img style="width: 40%;" src="file_ảnh_btl_web/vd_externalcss2.jpg" alt="">   
+                    </div>   
                 </div>
+                <p>Kiểu Internal được xác định trong phần tử style, bên trong phần tử head của trang HTML.</p> 
+                <div class="example_list">
+                    <p>Ví dụ:</p>
+                    <img style="width: 60%;" src="file_ảnh_btl_web/vd_internal.jpg" alt="">
                 </div>
+                <p>Kiểu Inline được xác định trong thuộc tính "style" của phần tử có liên quan.</p>
+                <div class="example_list">
+                    <p>Ví dụ:</p>
+                    <img style="width: 60%;" src="file_ảnh_btl_web/vd_inline.jpg" alt="">
+                </div>
+                <h4 id="selector">3. Bộ chọn CSS</h4>
+                <p>Bộ chọn CSS được sử dụng để tìm hoặc chọn các phần tử HTML mà bạn muốn tạo kiểu.</p>
+                <p>Chúng ta có thể chia bộ chọn thành năm loại:</p>
+                <p> - Bộ chọn đơn giản (chọn các phần tử dựa trên tên, id, lớp)</p>
+                <p> - Bộ chọn bộ kết hợp (chọn các phần tử dựa trên mối quan hệ cụ thể giữa chúng)</p>
+                <p> - Bộ chọn lớp giả (chọn phần tử dựa trên một trạng thái nhất định)</p>
+                <p> - Bộ chọn phần tử giả (chọn và tạo kiểu cho một phần của phần tử)</p>
+                <p> - Bộ chọn thuộc tính (chọn các phần tử dựa trên một thuộc tính hoặc giá trị thuộc tính)</p>
+                <div class="example_list">
+                    <p>Ví dụ:</p>
+                    <p>Chọn các phần tử HTML dựa trên tên phần tử:</p>
+                    <img style="width: 50%;" src="file_ảnh_btl_web/vd_selector1.jpg" alt="">
+                    <p>Chọn các phần tử HTML dựa trên id của phần tử:</p>
+                    <img style="width: 50%;" src="file_ảnh_btl_web/vd_selector2.jpg" alt="">
+                    <p>Chọn các phần tử HTML dựa trên class của phần tử:</p>
+                    <img style="width: 50%;" src="file_ảnh_btl_web/vd_selector3.jpg" alt="">
+                    <p>Chọn tất cả phần tử HTML:</p>
+                    <img style="width: 50%;" src="file_ảnh_btl_web/vd_selector4.jpg" alt="">
+                    <p>Bộ chọn nhóm chọn các phần tử có cùng định nghĩa kiểu:</p>
+                    <img style="width: 50%;" src="file_ảnh_btl_web/vd_selector5.jpg" alt="">
+                </div>
+                <h4 id="format">4. Một số định dạng CSS</h4>
+                <p class="level3">CSS Text</p>
+                <p>- Thuộc tính color được sử dụng để thiết lập màu sắc của văn bản.</p>
+                <div class="example_list">
+                    <p>Ví dụ:</p>
+                    <img style="width: 50%;" src="file_ảnh_btl_web/vd_textcolor1.jpg" alt="">
+                    <img style="width: 45%;" src="file_ảnh_btl_web/vd_textcolor2.jpg" alt="">
+                </div>
+                <p>- Thuộc tính background color sử dụng để thiết lập màu nền của văn bản.</p>
+                <div class="example_list">
+                    <p>Ví dụ:</p>
+                    <img style="width: 50%;" src="file_ảnh_btl_web/vd_nentext1.jpg" alt="">
+                    <img style="width: 45%;" src="file_ảnh_btl_web/vd_nentext2.jpg" alt="">
+                </div>
+                <p>- Thuộc tính text-align được sử dụng để căn chỉnh văn bản theo chiều ngang.</p>
+                <p>Văn bản có thể căn trái, phải, giữa tùy thuộc giá trị mà ta chỉ định.</p>
+                <div class="example_list">
+                    <p>Ví dụ:</p>
+                    <img style="width: 60%;" src="file_ảnh_btl_web/vd_textalign1.jpg" alt="">
+                    <img style="width: 60%;" src="file_ảnh_btl_web/vd_textalign2.jpg" alt="">
+                </div>
+                <P class="level3">CSS Margin</P>
+                <p>Lề được sử dụng để tạo không gian xung quanh các phần tử, bền ngoài đường viền.</p>
+                <p>Thuộc tính margin được sử dụng để tạo không gian xung quanh các phần tử, bên ngoài đường viền.</p>
+                <p>Các thuộc tính căn lề gồm: margin-top, margin-right, margin-bottom, margin-left</p>
+                <p>Đi kèm với thuộc tính là các giá trị: auto, length, %, inherit</p>
+                <div class="example_list">
+                    <p>Ví dụ:</p>
+                    <img style="width: 60%;" src="file_ảnh_btl_web/vd_margin1.jpg" alt="">
+                    <img style="width: 60%;" src="file_ảnh_btl_web/vd_margin2.jpg" alt="">
+                </div>
+                <p class="level3">CSS Pseudo-classes</p>
+                <p>Một lớp giả được sử dụng để xác định trạng thái đặc biệt của một phần tử.</p>
+                <p>Ví dụ, nó có thể được sử dụng để:</p>
+                <p>Tạo kiểu cho một phần tử khi người dùng di chuột qua nó</p>
+                <p>Định dạng kiểu cho link liên kết ở các trang thái truy cập khác nhau</p>
+                <p>Tạo kiểu cho một phần tử khi nó được lấy nét(focus).</p>
+                <p>Cú pháp tạo lớp giả: <br>
+                    selector:pseudo-class {
+                        property: value;
+                    }
+                </p>
+                <div class="example_list">
+                    <p>Ví dụ:
+                        <br>- Tạo hiệu ứng di chuột dùng hover
+                    </p>
+                    <img style="width: 60%;" src="file_ảnh_btl_web/vd_lovefake.jpg" alt="">
+                    <p>Khi di chuột vào link nó sẽ đổi màu và font chữ</p>
+                    <p><a class="highlight" href="css_syntax.asp">CSS Syntax</a></p>
+                    <p>- Tạo tích xanh online dùng affter </p>
+                    <div style="display:flex;">
+                        <img style="width: 60%;" src="file_ảnh_btl_web/vd_affter.jpg" alt="">
+                        <div class="ava" style="margin-left: 10px;">
+                    </div>
+                    </div>
+                </div>
+                <h4 id="review_b">5. Giới thiệu Bootstrap</h4>
+                <p>Bootstrap là 1 framework HTML, CSS, và JavaScript cho phép người dùng dễ dàng thiết kế website theo 1 chuẩn nhất định, 
+                    tạo các website thân thiện với các thiết bị cầm tay như mobile, ipad, tablet,...</p>
+                <p>Bootstrap bao gồm những cái cơ bản có sẵn như: typography, forms, buttons, tables, navigation, modals, image carousels và nhiều thứ khác. Trong bootstrap có thêm nhiều Component, 
+                    Javascript hỗ trợ cho việc thiết kế reponsive của bạn dễ dàng, thuận tiện và nhanh chóng hơn.</p>
+                <p class="level3">
+                    Cách sử dụng bootstrap
+                </p>
+                <p>Có hai cách tải Bootstrap về web: Tải trực tiếp từ trang cung cấp Bootstrap, Sử dụng bootstrap thông qua CDN Bootstrap.</p>
+                <p>- Tải về từ trang Bootstrap: chúng ta tải file bootstrap về và giải nén sau đó nhúng file css vào phần head như bên dưới:</p>
+                <img style="width: 70%;" src="file_ảnh_btl_web/vd_bs1.jpg" alt="">
+                <p>- Sử dụng CDN(mạng phân phối nội dung): Chúng ta nhúng trực tiếp link website cung cấp Bootstrap như ở bên dưới:</p>
+                <img style="width: 70%;" src="file_ảnh_btl_web/vd_bs2.jpg" alt="">
             </div>
-            <h4>5. Giới thiệu Bootstrap</h4>
-            <p>Bootstrap là 1 framework HTML, CSS, và JavaScript cho phép người dùng dễ dàng thiết kế website theo 1 chuẩn nhất định, 
-                tạo các website thân thiện với các thiết bị cầm tay như mobile, ipad, tablet,...</p>
-            <p>Bootstrap bao gồm những cái cơ bản có sẵn như: typography, forms, buttons, tables, navigation, modals, image carousels và nhiều thứ khác. Trong bootstrap có thêm nhiều Component, 
-                Javascript hỗ trợ cho việc thiết kế reponsive của bạn dễ dàng, thuận tiện và nhanh chóng hơn.</p>
-            <p class="level3">
-                Cách sử dụng bootstrap
-            </p>
-            <p>Có hai cách tải Bootstrap về web: Tải trực tiếp từ trang cung cấp Bootstrap, Sử dụng bootstrap thông qua CDN Bootstrap.</p>
-            <p>- Tải về từ trang Bootstrap: chúng ta tải file bootstrap về và giải nén sau đó nhúng file css vào phần head như bên dưới:</p>
-            <img style="width: 70%;" src="file_ảnh_btl_web/vd_bs1.jpg" alt="">
-            <p>- Sử dụng CDN(mạng phân phối nội dung): Chúng ta nhúng trực tiếp link website cung cấp Bootstrap như ở bên dưới:</p>
-            <img style="width: 70%;" src="file_ảnh_btl_web/vd_bs2.jpg" alt="">
-
         </div>
-    </div>
+    </div>    
     <script  type = "module"  src = "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" > </script> 
     <script  nomodule  src = "https: // unkg .com / ionicons @ 5.5.2 / dist / ionicons / ionicons.js " > </script>
 </body>

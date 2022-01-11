@@ -24,28 +24,72 @@ hr {
 :root {
     --xam: #BCBABE;
     --xanh: #90AFC5;
-    --trang: white;
+    --trang: #F1F1F2;
 }
 
 body {
     background-color: var(--trang);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.left {
+    width: 20%;
+    height: 100%;
+   
+}
+
+.left .mucluc {
+    position: fixed;
+    width: 20%;
+    border-left: 1px solid grey;
+    height: 100%;
+    background-color: rgb(243, 243, 243);
+}
+
+.left .mucluc p {
+    background-color: var(--xanh);
+    padding: 10.6px 0px 10.6px 10px;
+    border-radius: 8px;
+}
+
+.left .mucluc li {
+    list-style: none;
+    line-height: 23px;
+    padding-left: 10px;
+}
+
+.left .mucluc li:hover a {
+    color: crimson;
+}
+
+.left .mucluc li a {
+    text-decoration: none;
+}
+
+.right {
+    width: 80%;
+    background-color: white;
+    border-left: grey 1px solid;
 }
 
 .header {
     height: 160px;
     display: flex;
     justify-content: center;    
-}
-
-.title {
-    width: 65%;
     background: url(file_ảnh_btl_web/nenhtml.jpg);
     background-size:77%;
     background-repeat: repeat-x;
-    text-align: center;
     margin-top: 20px;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    margin-top: 95px;
     position: relative;
-    
 }
 
 .title a {
@@ -53,12 +97,7 @@ body {
     color: rgb(0, 0, 0);
 }
 
-.fixed {
-    position: fixed;
-    width: 100%;
-    z-index: 100;
-    top: 18px;
-}
+
 
 .icon_float {
     width: 50px;
@@ -67,15 +106,14 @@ body {
     border: 2px solid var(--xanh);
     border-radius: 50%;
     background-size: 50px;
-    top:85px;
+    top:57px;
     position: absolute;
     outline: 3px solid var(--trang);
 }
 
 
 .menu {
-    width: 65%;
-    margin-left: 17.5%;
+    width: 100%;
     padding: 10px 0px;
     background: white;
     position: fixed;
@@ -89,7 +127,7 @@ body {
 }
 
 .menu ul li {
-    padding-right: 10px;
+    padding-left: 18px;
 }
 
 .menu ul li > a {
@@ -111,9 +149,9 @@ li:hover {
 }
 
 .main {
-    width: 65%;
-    background-color: var(--xanh);
-    margin-top: 162px;
+    width: 100%;
+    background-color: white;
+    margin-top: 15px;
     color: rgb(0, 0, 0);
     padding: 20px;
     box-sizing: border-box;
