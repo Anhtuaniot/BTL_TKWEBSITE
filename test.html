@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h2h2, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>CSS Selectors</h2>
+    <p>Bộ chọn CSS được sử dụng để "tìm" (hoặc chọn) các phần tử HTML mà bạn muốn tạo kiểu.</p>
+    <p>Chúng ta có thể chia các bộ chọn CSS thành năm loại:</p>
+    <p>- Bộ chọn đơn giản (chọn các phần tử dựa trên tên, id, lớp)</p>
+    <p>- Bộ chọn bộ kết hợp (chọn các phần tử dựa trên mối quan hệ cụ thể giữa chúng)</p>
+    <p>- Bộ chọn lớp giả (chọn phần tử dựa trên một trạng thái nhất định)</p>
+    <p>- Bộ chọn phần tử giả (chọn và tạo kiểu cho một phần của phần tử)</p>
+    <p>- Bộ chọn thuộc tính (chọn các phần tử dựa trên một thuộc tính hoặc giá trị thuộc tính)</p>
+    <h3>bộ chọn phần tử css</h3>
+    <!-- codevidu1
+    "&lt;!DOCTYPE html&gt;\n&lt;html&gt;\n&lt;head&gt;\n&lt;style&gt;\np {\n  text-align: center;\n  color: red;\n} \n&lt;/style&gt;\n&lt;/head&gt;\n&lt;body&gt;\n\n&lt;p&gt;Every paragraph will be affected by the style.&lt;/p&gt;\n&lt;p id=\"para1\"&gt;Me too!&lt;/p&gt;\n&lt;p&gt;And me!&lt;/p&gt;\n\n&lt;/body&gt;\n&lt;/html&gt;\n"
+    codevidu2
+    "<!DOCTYPE html>\n<html>\n<head>\n<style>\np {\n  text-align: center;\n  color: red;\n} \n</style>\n</head>\n<body>\n\n<p>Every paragraph will be affected by the style.</p>\n<p id=\"para1\">Me too!</p>\n<p>And me!</p>\n\n</body>\n</html>\n" -->
+    <h3>bộ chọn id css</h3>
+    <!-- codevidu1
+    "&lt;!DOCTYPE html&gt;\n&lt;html&gt;\n&lt;head&gt;\n&lt;style&gt;\n#para1 {\n  text-align: center;\n  color: red;\n}\n&lt;/style&gt;\n&lt;/head&gt;\n&lt;body&gt;\n\n&lt;p id=\"para1\"&gt;Hello World!&lt;/p&gt;\n&lt;p&gt;This paragraph is not affected by the style.&lt;/p&gt;\n\n&lt;/body&gt;\n&lt;/html&gt;\n\n\n&lt;p&gt;Every paragraph will be affected by the style.&lt;/p&gt;\n&lt;p id=\"para1\"&gt;Me too!&lt;/p&gt;\n&lt;p&gt;And me!&lt;/p&gt;\n\n&lt;/body&gt;\n&lt;/html&gt;\n"
+    codevidu2
+    "<!DOCTYPE html>\n<html>\n<head>\n<style>\n#para1 {\n  text-align: center;\n  color: red;\n}\n</style>\n</head>\n<body>\n\n<p id=\"para1\">Hello World!</p>\n<p>This paragraph is not affected by the style.</p>\n\n</body>\n</html>\n\n\n<p>Every paragraph will be affected by the style.</p>\n<p id=\"para1\">Me too!</p>\n<p>And me!</p>\n\n</body>\n</html>\n" -->
+    <h2>CSS TEXT</h2>
+    <P>CSS có rất nhiều thuộc tính để định dạng văn bản.</P>
+    <h3>Văn bản màu</h3>
+    <p>Thuộc colortính được sử dụng để đặt màu của văn bản. Màu sắc được chỉ định bởi:</p>
+    <p>- tên màu - như "đỏ"</p>
+    <p>- giá trị HEX - như "# ff0000"</p>
+    <p>- một giá trị RGB - như "rgb (255,0,0)"</p>
+    <p>Màu văn bản mặc định cho một trang được xác định trong bộ chọn nội dung.</p>
+    <!-- codevidu1
+    "&lt;!DOCTYPE html&gt;\n&lt;html&gt;\n&lt;head&gt;\n&lt;style&gt;\nbody {\n  color: blue;\n}\n\nh1 {\n  color: green;\n}\n&lt;/style&gt;\n&lt;/head&gt;\n&lt;body&gt;\n\n&lt;h1&gt;This is heading 1&lt;/h1&gt;\n&lt;p&gt;This is an ordinary paragraph. Notice that this text is blue. The default text color for a page is defined in the body selector.&lt;/p&gt;\n&lt;p&gt;Another paragraph.&lt;/p&gt;\n\n&lt;/body&gt;\n&lt;/html&gt;\n\n"
+    codevidu2
+    "<!DOCTYPE html>\n<html>\n<head>\n<style>\nbody {\n  color: blue;\n}\n\nh1 {\n  color: green;\n}\n</style>\n</head>\n<body>\n\n<h1>This is heading 1</h1>\n<p>This is an ordinary paragraph. Notice that this text is blue. The default text color for a page is defined in the body selector.</p>\n<p>Another paragraph.</p>\n\n</body>\n</html>\n\n" -->
+    <h2>CSS Fonts</h2>
+    <p>Trong CSS có năm họ phông chữ chung:
+
+        Phông chữ Serif có một nét nhỏ ở các cạnh của mỗi chữ cái. Chúng tạo ra một cảm giác trang trọng và sang trọng.
+        Phông chữ Sans-serif có đường nét rõ ràng (không kèm theo các nét nhỏ). Chúng tạo ra một cái nhìn hiện đại và tối giản.
+        Phông chữ Monospace - ở đây tất cả các chữ cái có cùng chiều rộng cố định. Chúng tạo ra một cái nhìn máy móc. 
+        Phông chữ viết tay bắt chước chữ viết tay của con người.
+        Phông chữ tưởng tượng là phông chữ trang trí / vui tươi.
+        Tất cả các tên phông chữ khác nhau thuộc một trong các họ phông chữ chung. </p>
+    <!-- codevidu1
+    "&lt;!DOCTYPE html&gt;\n&lt;html&gt;\n&lt;head&gt;\n&lt;style&gt;\n.p1 {\n  font-family: \"Times New Roman\", Times, serif;\n}\n\n.p2 {\n  font-family: Arial, Helvetica, sans-serif;\n}\n\n.p3 {\n  font-family: \"Lucida Console\", \"Courier New\", monospace;\n}\n&lt;/style&gt;\n&lt;/head&gt;\n&lt;body&gt;\n\n&lt;h1&gt;CSS font-family&lt;/h1&gt;\n&lt;p class=\"p1\"&gt;This is a paragraph, shown in the Times New Roman font.&lt;/p&gt;\n&lt;p class=\"p2\"&gt;This is a paragraph, shown in the Arial font.&lt;/p&gt;\n&lt;p class=\"p3\"&gt;This is a paragraph, shown in the Lucida Console font.&lt;/p&gt;\n\n&lt;/body&gt;\n&lt;/html&gt;"
+    codevidu2
+    "<!DOCTYPE html>\n<html>\n<head>\n<style>\n.p1 {\n  font-family: \"Times New Roman\", Times, serif;\n}\n\n.p2 {\n  font-family: Arial, Helvetica, sans-serif;\n}\n\n.p3 {\n  font-family: \"Lucida Console\", \"Courier New\", monospace;\n}\n</style>\n</head>\n<body>\n\n<h1>CSS font-family</h1>\n<p class=\"p1\">This is a paragraph, shown in the Times New Roman font.</p>\n<p class=\"p2\">This is a paragraph, shown in the Arial font.</p>\n<p class=\"p3\">This is a paragraph, shown in the Lucida Console font.</p>\n\n</body>\n</html>" -->
+    <h2>CSS Padding</h2>
+    <p>Padding được sử dụng để tạo không gian xung quanh nội dung của phần tử, bên trong bất kỳ đường viền xác định nào.</p>
+    <p>Thuộc tính CSS paddingđược sử dụng để tạo không gian xung quanh nội dung của phần tử, bên trong bất kỳ đường viền xác định nào.
+
+        Với CSS, bạn có toàn quyền kiểm soát phần đệm. Có các thuộc tính để thiết lập phần đệm cho mỗi bên của một phần tử (trên cùng, bên phải, dưới cùng và bên trái).</p>
+    <p>CSS có các thuộc tính để chỉ định phần đệm cho mỗi bên của phần tử:
+
+        padding-top
+        padding-right
+        padding-bottom
+        padding-left
+        Tất cả các thuộc tính padding có thể có các giá trị sau:
+        
+        length - chỉ định một khoảng đệm bằng px, pt, cm, v.v.
+        % - chỉ định một khoảng đệm tính bằng% chiều rộng của phần tử chứa
+        thừa kế - chỉ định rằng phần đệm phải được kế thừa từ phần tử mẹ
+        Lưu ý: Giá trị âm không được phép.</p>
+    <!-- codevidu1
+    "&lt;!DOCTYPE html&gt;\n&lt;html&gt;\n&lt;head&gt;\n&lt;style&gt;\ndiv {\n  border: 1px solid black;\n  background-color: lightblue;\n  padding-top: 50px;\n  padding-right: 30px;\n  padding-bottom: 50px;\n  padding-left: 80px;\n}\n&lt;/style&gt;\n&lt;/head&gt;\n&lt;body&gt;\n\n&lt;h2&gt;Using individual padding properties&lt;/h2&gt;\n\n&lt;div&gt;This div element has a top padding of 50px, a right padding of 30px, a bottom padding of 50px, and a left padding of 80px.&lt;/div&gt;\n\n&lt;/body&gt;\n&lt;/html&gt;\n"
+    codevidu2
+    "<!DOCTYPE html>\n<html>\n<head>\n<style>\ndiv {\n  border: 1px solid black;\n  background-color: lightblue;\n  padding-top: 50px;\n  padding-right: 30px;\n  padding-bottom: 50px;\n  padding-left: 80px;\n}\n</style>\n</head>\n<body>\n\n<h2>Using individual padding properties</h2>\n\n<div>This div element has a top padding of 50px, a right padding of 30px, a bottom padding of 50px, and a left padding of 80px.</div>\n\n</body>\n</html>\n" -->
+    <h2>Bootstrap 4</h2>
+    <p>Bootstrap là gì?
+        Bootstrap là một front-end framework miễn phí để phát triển web nhanh hơn và dễ dàng hơn
+        Bootstrap bao gồm các mẫu thiết kế dựa trên HTML và CSS cho kiểu chữ, biểu mẫu, nút, bảng, điều hướng, phương thức, băng chuyền hình ảnh và nhiều thứ khác, cũng như các plugin JavaScript tùy chọn
+        Bootstrap cũng cung cấp cho bạn khả năng dễ dàng tạo các thiết kế đáp ứng</p>
+    <!-- codevidu1
+    "&lt;!DOCTYPE html&gt;\n&lt;html lang=\"en\"&gt;\n&lt;head&gt;\n  &lt;title&gt;Bootstrap Example&lt;/title&gt;\n  &lt;meta charset=\"utf-8\"&gt;\n  &lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"&gt;\n  &lt;link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css\"&gt;\n  &lt;script src=\"https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js\"&gt;&lt;/script&gt;\n  &lt;script src=\"https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js\"&gt;&lt;/script&gt;\n  &lt;script src=\"https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js\"&gt;&lt;/script&gt;\n&lt;/head&gt;\n&lt;body&gt;\n\n&lt;div class=\"jumbotron text-center\"&gt;\n  &lt;h1&gt;My First Bootstrap Page&lt;/h1&gt;\n  &lt;p&gt;Resize this responsive page to see the effect!&lt;/p&gt; \n&lt;/div&gt;\n  \n&lt;div class=\"container\"&gt;\n  &lt;div class=\"row\"&gt;\n    &lt;div class=\"col-sm-4\"&gt;\n      &lt;h3&gt;Column 1&lt;/h3&gt;\n      &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit...&lt;/p&gt;\n      &lt;p&gt;Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...&lt;/p&gt;\n    &lt;/div&gt;\n    &lt;div class=\"col-sm-4\"&gt;\n      &lt;h3&gt;Column 2&lt;/h3&gt;\n      &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit...&lt;/p&gt;\n      &lt;p&gt;Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...&lt;/p&gt;\n    &lt;/div&gt;\n    &lt;div class=\"col-sm-4\"&gt;\n      &lt;h3&gt;Column 3&lt;/h3&gt;        \n      &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit...&lt;/p&gt;\n      &lt;p&gt;Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...&lt;/p&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n\n&lt;/body&gt;\n&lt;/html&gt;\n"
+    codevidu2
+    "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <title>Bootstrap Example</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css\">\n  <script src=\"https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js\"></script>\n  <script src=\"https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js\"></script>\n  <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js\"></script>\n</head>\n<body>\n\n<div class=\"jumbotron text-center\">\n  <h1>My First Bootstrap Page</h1>\n  <p>Resize this responsive page to see the effect!</p> \n</div>\n  \n<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-sm-4\">\n      <h3>Column 1</h3>\n      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>\n      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>\n    </div>\n    <div class=\"col-sm-4\">\n      <h3>Column 2</h3>\n      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>\n      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>\n    </div>\n    <div class=\"col-sm-4\">\n      <h3>Column 3</h3>        \n      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>\n      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>\n    </div>\n  </div>\n</div>\n\n</body>\n</html>\n" -->
+</body>
+</html>
