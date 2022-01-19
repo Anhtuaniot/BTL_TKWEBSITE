@@ -23,8 +23,6 @@ body {
 }
 
 
-
-
 .right-review_html_css_js  {
     background-color: whitesmoke;
     width: 80%;
@@ -417,7 +415,7 @@ body {
     opacity: 1;
 }
 
-@media (max-width: 1023px)
+@media (max-width: 1000px)
 {
     .mobile-bt {
         display: block;
